@@ -1,0 +1,49 @@
+/*.nome da clase > selector
+        DIV -> nome da tag
+        #nome do id
+        */
+        .caixa-1{
+            /*aqui defino uma classe*/
+            background:#bb1f1f;
+            width: 300px;
+            min-height: 300px;
+            margin: 10px;
+        }
+        
+        .caixa-2{
+            /*aqui defino uma classe*/
+            /*background:green !important; -> é o que vai ser feito em primeiro lugar*/
+            background:green;
+            width: 400px;
+            min-height: 250px;
+            margin: 10px;
+        }
+
+        p{
+            color: #ec7c13;
+            font-size: 24px;
+        }
+
+        .caixa-1 p{
+            color: #dde2e2;
+        }
+
+        .caixa-2 p{
+            color: white;
+            font-size: 8px;
+        }
+
+        .caixa-especial{
+            background: #1d88b9;
+        }
+
+        .caixa-4,.caixa-5{
+            background:#ae1fbb;
+            width: 500px;
+            height: 600px;
+            margin: 20px;
+        }
+
+        .caixa-5{
+            background:#dde2e2;
+        }
