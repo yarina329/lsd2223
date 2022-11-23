@@ -1,0 +1,63 @@
+.wrapper{
+    background: #aa3939;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 44px;
+    background: #fff;
+}
+
+.hero{
+    width: 100%;
+    height: 477px;
+    background: #c74d9e;
+}
+
+.articles{
+    width: 100%;
+    height: 200px;
+    background: #9b6d75;
+}
+
+.highlights{
+    width: 100%;
+    height: 200px;
+    background: #534e4f;
+}
+
+.latest-news{
+    width: 100%;
+    height: 250px;
+    background: #d1c9ca;
+}
+
+footer{
+    background: #4dafc7;
+    width: 100%;
+    height: 150px;
+}
+
+.col-1{
+    width: 20%;
+    height: 44px;
+    background: #4dafc7;
+    float: left;
+}
+
+.col-2{
+    width: 60%;
+    height: 44px;
+    background: #fff;
+    float: left;
+    text-align: center;
+    color: #f6755e;
+}
+
+.col-3{
+    width: 20%;
+    height: 44px;
+    background: #4dafc7;
+    float: left;
+}
