@@ -1,0 +1,48 @@
+body{
+    background: lightblue;
+}
+
+.frame{
+    width: 800px;
+    height: 400px;
+    background: red;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; /*diz q tem um left noutra class*/
+}
+
+.frame img{
+    width: 100%;
+}
+
+.overlay{
+    width: 800px;
+    height: 400px;
+    /*background: #000;*/
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;/*é o left que esta relacionado com o "pai"*/
+    /*opacity: 0.5;*/
+    display: none;
+}
+
+.frame:hover .overlay{
+    display: block;
+}
+
+.overlay h1{
+    color: pink;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.frame:hover img{
+    width: 110%;
+}
+
+.frame2{
+    background-image: url('../imagens/camera.jpg');
+    background-position: center;
+    background-size: cover;
+}
