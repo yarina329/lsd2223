@@ -40,6 +40,8 @@ header{
     margin-left: auto;
     margin-right: auto;
     margin-top: 6px;
+    font-family: 'Arial';
+    padding: 5px;
 }
 
 .header, .col-3 a:hover{
@@ -66,14 +68,19 @@ header{
     text-align: center;
 }
 
-.hero,.hero-content h1{
+.hero-content h1{
     color: #25A2C3;
-    
+    font-size: 22px;
+    padding: 10px 0;
+    text-align: center;
 }
 
-.hero,.hero-content p{
+.hero-content p{
     color:#000000;
-    
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .hero-content button{
@@ -87,24 +94,127 @@ header{
 }
 
 .articles{
-    float: left;
     width: 100%;
-    height: 200px;
+    height: 500px;
     background: #9b6d75;
+    float: left;
+}
+
+.articles .center-articles{
+    width: 70%;
+    height: 500px;
+    background: #25A2C3;
+    margin: auto;
+}
+
+.articles .col1, 
+.articles .col2, 
+.articles .col3{
+    width: 33.33%;
+    float: left;
+}
+
+.articles .col1 h2 ,
+.articles .col3 h2 {
+    color: #25A2C3;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.articles .col3 h2 {
+    text-align: left;
+}
+
+.articles .col1 p,
+.articles .col3 p{
+    text-align: justify;
+    color: #727a82;
+}
+
+.articles .col1 div,
+.articles .col3 div{
+    background: #fff;
+    width: 70%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.articles .col3 div{
+    float: left;
+}
+
+
+.center-articles .col2 .moldura{
+    width: 200px;
+    height: 200px;
+    background: wheat;
+    margin: 0 auto;
+    border-radius: 100px;
+    overflow: hidden; /*esconder o q esta +*/
+}
+
+.center-articles .col2 .moldura img{
+    width: 100%;
 }
 
 .highlights{
     float: left;
     width: 100%;
     height: 200px;
-    background: #534e4f;
+    background: #f6755e;
+    color: #fff;
+    text-align: center;
+}
+
+.highlights h2{
+    color: #fff;
+    font-weight: bold;
+}
+
+.highlights p:nth-child(2){ /*o primeiro paragrafo do filho é italico | o "h2" tambem conta como paragrafo*/
+    font-style: italic;
+}
+
+.highlights p span{
+    font-weight: bold;
 }
 
 .latest-news{
     float: left;
     width: 100%;
-    height: 250px;
-    background: #d1c9ca;
+    height: 150px;
+}
+
+.colunas-de-noticias{
+    width: 70%;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.colunas-de-noticias div{
+    width: calc(33.33% - 2px);
+    float: left;
+    height: 400px;
+    border: 1px solid #727a82;
+    margin: 0 10px;
+}
+
+.colunas-de-noticias div img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.colunas-de-noticias div h3{
+    padding-left: 20px;
+    color: #25A2C3;
+    font-weight: bold;
+}
+
+.colunas-de-noticias div p{
+    padding: 20px;
+    text-align: justify;
+    color: #727a82;
 }
 
 footer{
