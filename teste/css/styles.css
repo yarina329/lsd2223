@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    /*height: 400px;*/
+    float: left;
+    background: yellow;
+    /*com esta prioridade deixa "crescer" até uma determinada largura
+    faz sempre horrizontal*/
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    /*para o flex funcionar deve ter esta propriedade*/
+    flex-wrap: wrap;
+}
+
+/*com o border-sizing não calcula a "margin"*/
+.caixa-1{
+    /*também é possivel utilizar a propriedade calc para a largura*/
+    flex: calc(50% - 40px);
+    height: 200px;
+    background: yellowgreen;
+    padding: 20px;
+    overflow: hidden;
+    margin: 20px;
+    float: left;
+    transition: 3s;
+}
+

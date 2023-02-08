@@ -1,0 +1,12 @@
+/*se definir no codigo de html não é necessário 
+definir novamente no ficheiro mobile.css*/
+
+/*@media screen and (max-width:800px){*/
+    
+.container{
+    flex-direction: column;
+}
+
+.caixa-1{
+    margin: 20px 0;
+}
