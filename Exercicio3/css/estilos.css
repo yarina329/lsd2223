@@ -6,28 +6,27 @@
     src: url('../fonts/Pacifico-Regular.ttf');
 }
 
-
 body{
-    font-family: Arial;
-    margin: 0%;
-    padding: 0%;
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper{
-    background: #aa3939;
+    background: yellow;
     width: 100%;
 }
 
 header{
     width: 100%;
     height: 44px;
-    background: #fff;
+    background: white ;
     float: left;
     font-family: 'Pacifico';
     font-weight: bold;
 }
 
-.header, .col-3 a{
+header .col-3 a{
     text-transform: uppercase;
     text-decoration: none;
     color: #727a82;
@@ -36,47 +35,200 @@ header{
     display: block;
     border-radius: 4px;
     text-align: center;
-    /*centrar o elemento*/
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6px;
+    margin-top: 7px;
     font-family: 'Arial';
     padding: 5px;
 }
 
-.header, .col-3 a:hover{
-    background: #f6755e;
-    border-color: #f6755e;
-    color: #fff;
+/*margin: 10px; 20px;*/
+
+header .col-3 a:hover{
+    background: #dee1e3;
+
 }
 
 .hero{
-    float: left;
+    background: url('../images/banner.jpg');
+    background-position: top center;
+    background-repeat: no-repeat; 
+    background-size: cover;
     width: 100%;
     height: 477px;
-    background: url('../images/images/banner.jpg') top center no-repeat;
-    background-size: cover;
-    /*contain - utiliza todo o espaço da "imagem"*/
+    float: left;
+
+    /*
+    background-image: url('../images/banner.jpg')
+    background-color: purple;
+    */
 }
-.hero-content {
-    float: left; /*ajuda a identificar ou a "juntar" outras divs */
-    /*background-color:#493430;*/
-    width: 50%;
-    min-height: 150px;
-    margin-left: 25%;
-    margin-top: 100PX;
+
+.articles{
+    background: white;
+    width: 100%;
+    height: 500px;
+    float: left;
+}
+
+.articles .center-articles{
+    width: 70%;
+    height: 500px;
+    margin: auto;
+}
+
+.articles .col-4,
+.articles .col-5,
+.articles .col-6{
+    width: 33.33%;
+    float: left;
+}
+
+.articles .col-4 h2,
+.articles .col-6 h2{
+    color: #25A2C3;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.articles .col-6 h2{
+    text-align: left;
+}
+
+.center-articles .col-4 div,
+.center-articles .col-6 div{
+    width: 70%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.articles .col-6 div{
+    float: left;
+}
+
+.center-articles .col-4 p{ 
+    text-align: justify;
+    color: #767d85;
+}
+
+.center-articles .col-5 .moldura{
+    width: 200px;
+    height: 200px;
+    background: grey;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.center-articles .col-5 .moldura img{
+    width: 100%;
+}
+
+.highlights{
+    background: #f6755e;
+    width: 100%;
+    height: 200px;
+    float: left;
+    color: #ffff;
     text-align: center;
+}
+
+.highlights h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.highlights span{
+    font-weight: bold;
+}
+
+.highlights p:nth-child(2){
+    font-style: italic;
+}
+
+.lastest-news{
+        width: 100%;
+        height: 250px;
+        float: left;
+}
+    
+.center-latest-news{
+    width: 70%;
+    margin: 0 auto;
+    background: greenyellow;
+}
+
+.center-latest-news div{
+    width: calc(33.33% - 22px);
+    float: left;
+    height: 400px;
+    border: 1px solid black;
+    margin: 0 10px;
+}
+
+.center-latest-news div img{
+    width: 100%;
+}
+
+.center-latest-news div h3{
+    padding-left: 5px;
+    color: #25a2c3;
+    font-weight: bold;
+}
+
+.center-latest-news div p{
+    padding: 20px;
+    color: #767d85;
+}
+
+footer{
+    background: #25a2c3;
+    width: 100%;
+    height: 150px;
+    float: left;
+    text-align: center;
+}
+
+.col-1{
+    width: 20%;
+    height: 44px;
+    float: left;
+}
+
+.col-2{
+    width: 60%;
+    height: 44px;
+    background: lightgray;
+    float: left;
+    text-align: center;
+    color: #f6755e;
+
+}
+
+.col-3{
+    width: 20%;
+    height: 44px;
+    float: left;
 }
 
 .hero-content h1{
-    color: #25A2C3;
-    font-size: 22px;
-    padding: 10px 0;
     text-align: center;
+    color: #25A2C3;
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.hero-content{
+    width: 50%;
+    min-height: 150px;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 100px;
+    float: left;
 }
 
 .hero-content p{
-    color:#000000;
     font-size: 20px;
     line-height: 30px;
     margin-top: 10px;
@@ -85,165 +237,27 @@ header{
 
 .hero-content button{
     background-color:#f6755e;
-    color: #fff;
-    border: 0px;
-    border-radius: 4px;
+    color: white;
+    border: none;
     width: 150px;
     height: 40px;
-    /*padding: 15px 25px;*/
+    border-radius: 4px;
 }
 
-.articles{
-    width: 100%;
-    height: 500px;
-    background: #9b6d75;
-    float: left;
+.icon-menu-principal{
+    font-size: 30px;
+    color: grey;
+    
 }
 
-.articles .center-articles{
-    width: 70%;
-    height: 500px;
-    background: #25A2C3;
-    margin: auto;
-}
-
-.articles .col1, 
-.articles .col2, 
-.articles .col3{
-    width: 33.33%;
-    float: left;
-}
-
-.articles .col1 h2 ,
-.articles .col3 h2 {
-    color: #25A2C3;
+.title h4{
+    font-size: 24px;
     font-weight: bold;
-    text-align: right;
-    margin-bottom: 30px;
-}
-
-.articles .col3 h2 {
-    text-align: left;
-}
-
-.articles .col1 p,
-.articles .col3 p{
-    text-align: justify;
-    color: #727a82;
-}
-
-.articles .col1 div,
-.articles .col3 div{
-    background: #fff;
-    width: 70%;
-    float: right;
-    margin-bottom: 20px;
-}
-
-.articles .col3 div{
-    float: left;
-}
-
-
-.center-articles .col2 .moldura{
-    width: 200px;
-    height: 200px;
-    background: wheat;
-    margin: 0 auto;
-    border-radius: 100px;
-    overflow: hidden; /*esconder o q esta +*/
-}
-
-.center-articles .col2 .moldura img{
-    width: 100%;
-}
-
-.highlights{
-    float: left;
-    width: 100%;
-    height: 200px;
-    background: #f6755e;
-    color: #fff;
     text-align: center;
+    color: white;
 }
 
-.highlights h2{
-    color: #fff;
-    font-weight: bold;
-}
+.text1 {
+    color: white;
 
-.highlights p:nth-child(2){ /*o primeiro paragrafo do filho é italico | o "h2" tambem conta como paragrafo*/
-    font-style: italic;
 }
-
-.highlights p span{
-    font-weight: bold;
-}
-
-.latest-news{
-    float: left;
-    width: 100%;
-    height: 150px;
-}
-
-.colunas-de-noticias{
-    width: 70%;
-    background: #fff;
-    margin: 0 auto;
-}
-
-.colunas-de-noticias div{
-    width: calc(33.33% - 2px);
-    float: left;
-    height: 400px;
-    border: 1px solid #727a82;
-    margin: 0 10px;
-}
-
-.colunas-de-noticias div img{
-    width: 100%;
-    overflow: hidden;
-}
-
-.colunas-de-noticias div h3{
-    padding-left: 20px;
-    color: #25A2C3;
-    font-weight: bold;
-}
-
-.colunas-de-noticias div p{
-    padding: 20px;
-    text-align: justify;
-    color: #727a82;
-}
-
-footer{
-    float: left;
-    background: #4dafc7;
-    width: 100%;
-    height: 150px;
-}
-
-.col-1{
-    width: 20%;
-    height: 44px;
-    background: #4dafc7;
-    float: left;
-}
-
-.col-2{
-    width: 60%;
-    height: 44px;
-    background: #fff;
-    float: left;
-    text-align: center;
-    color: #f6755e;
-}
-
-.col-3{
-    width: 20%;
-    height: 44px;
-    background: #fff;
-    float: left;
-}
-
