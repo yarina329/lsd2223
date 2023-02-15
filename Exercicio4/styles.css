@@ -1,0 +1,49 @@
+body{
+    /*background: #ff0000;*/
+}
+
+a{
+    text-decoration: none;
+}
+
+.caixa{
+    width: calc(50% - 40px);
+    min-width: 300px;
+    height: 200px;
+    float: left;
+    margin: 10px 20px;
+}
+
+.cx-1{
+    background: #f0f0f0;
+}
+
+.cx-2{
+    background: #ea1245;
+}
+
+.caixa p{
+    font-size: 20px;
+}
+
+.cx-2 p{
+    color: orange;
+}
+
+.cx-1{
+    color: blue;
+}
+
+.cx-1 a:hover {
+    background: #f0f0f0;
+    color:#ea1245;
+}
+
+.cx-2 a:hover{
+    background: #ea1245;
+    color: #f0f0f0;
+}
+
+.caixa:hover{
+    background: yellow;
+}
