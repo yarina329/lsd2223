@@ -13,10 +13,8 @@
 </head>
 <body>
     <nav class="menu-mobile">
-        <i class="fa-sharp fa-solid fa-bars"></i>
-    </nav>
-    <nav class="menu-desktop">
-        <ul>
+        <i class="fa-sharp fa-solid fa-bars icon-menu-principal" onclick="mostraConteudoMenu()"></i>
+        <ul id="items-mobile" >
             <li>
                 <a>Link 1</a>
             </li>
@@ -31,29 +29,26 @@
             </li>
         </ul>
     </nav>
-    <div class="caixa">
-        Um texto para a primeira caixa
-
-
-    </div>
-
-    <div class="caixa">
-        <iframe class="video-youtube" src="https://www.youtube.com/embed/owNbMFfj1TY" title="O meu primeiro video do youtube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+    <nav class="menu-desktop">
         
-    </div>
-
+    </nav>
     <div class="caixa">
-        <video class="video1" controls autoplay muted>
-            <source src="videos/video1.mp4">
-            <source src="videos/video1.FLV">
-            <source src="videos/video1.WMV">
-        </video>
+        texto exemplo 1
+        </div>
+        <div class="caixa">
+            <iframe class="video-youtube" src="https://www.youtube.com/embed/gSo1wYONU4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="caixa">
+            <video class="ficheiro-video" controls poster="video/ponte.jpg">
+                <source src="video/video1.mp4">
+            </video>
+        </div>
+        <div class="caixa">
+        <audio>
+            <source src="">
+        </audio>
+        </div>
 
-        
-    </div>
-
-    <div class="caixa">
-        <audio class="audio-1" src=""
-    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
