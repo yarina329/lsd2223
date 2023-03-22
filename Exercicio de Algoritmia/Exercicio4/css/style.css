@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+.wrapper{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.formulario{
+    border: 1px solid #000;
+    width: 850px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+span{
+    display: none ;
+}
