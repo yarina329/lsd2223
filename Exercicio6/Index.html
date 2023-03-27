@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio6</title>
-
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.css">
+    <title>Exercicio6</title>
    
 </head>
-<body>
+<body onresize="normalizaMenuMobile()">
     <nav class="menu-mobile">
-        <i class="fa-sharp fa-solid fa-bars icon-menu-principal" onclick="mostraConteudoMenu()"></i>
-        <ul id="items-mobile" >
+        <span id="texto-menu" onclick="mostraConteudoMenu()">
+            <i class="fa-sharp fa-solid fa-bars icon-menu-principal"></i>
+        </span>
+        
+        <ul id="items-mobile">
             <li>
                 <a>Link 1</a>
             </li>
@@ -29,25 +31,42 @@
             </li>
         </ul>
     </nav>
+
     <nav class="menu-desktop">
-        
+        <ul>
+            <li>
+                <a>Link 1</a>
+            </li>
+            <li>
+                <a>Link 2</a>
+            </li>
+            <li>
+                <a>Link 3</a>
+            </li>
+            <li>
+                <a>Link 4</a>
+            </li>
+        </ul>
     </nav>
     <div class="caixa">
-        texto exemplo 1
-        </div>
-        <div class="caixa">
-            <iframe class="video-youtube" src="https://www.youtube.com/embed/gSo1wYONU4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="caixa">
-            <video class="ficheiro-video" controls poster="video/ponte.jpg">
-                <source src="video/video1.mp4">
-            </video>
-        </div>
-        <div class="caixa">
-        <audio>
-            <source src="">
-        </audio>
-        </div>
+Este texto bla bla bla.
+    </div>
+
+    <div class="caixa">
+        <iframe class="video-youtube" src="https://www.youtube.com/embed/ytx4DIQDBPg" title="O meu primeiro vídeo de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="caixa">
+        <video class="ficheiro-video" controls poster="images/pic01.jpg">
+            <source src="videos/Feid.mp4">
+        </video>
+    </div>
+
+    <div class="caixa">
+    <audio controls>
+        <source src="audios/mixkit-farm-animals-in-the-morning-7.wav" type="audio/wav">
+      </audio>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

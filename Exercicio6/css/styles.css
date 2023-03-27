@@ -12,9 +12,9 @@ body{
 }
 
 .menu-desktop{
-    border: 1px solid #000;
+    border: 1px solid black;
     float: left;
-    width: calc(100% - 2px);
+    width: 100%;
 }
 
 .menu-desktop li{
@@ -27,46 +27,52 @@ body{
 .menu-mobile{
     display: none;
 }
-    
+
+.icon-menu-principal{
+    font-size: 30px;
+    padding: 10px;
+}
+
 .video-youtube{
     width: 100%;
     height: 100%;
 }
 
-.video1{
+.ficheiro-video{
     width: 100%;
     height: 100%;
 }
 
-/* SE O ECRA NO MAXIMO TIVER 1200PX*/
+.ficheiro-video[poster]{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SE O ECRÃ TIVER NO MÁX 1200px*/
 @media screen and (max-width:1200px) {
-    
-.caixa{
-    background-color: brown;
-    width: calc(50% - 20px);
+    .caixa{
+        background-color: brown;
+        width: calc(50% - 20px);
+    }
 }
 
-}
-
-/* SE O ECRA NO MAXIMO TIVER 850PX*/
-@media screen and (max-width: 850px) {
-
-.caixa{
-    width: calc(100% - 60px);
-    margin: 30px;
-    font-size: 40px;
-}
-
-.menu-mobile{
-    display: block;
-}
-
-.menu-desktop{
-    display: none;
+/* SE O ECRÃ TIVER NO MÁX 850px*/
+@media screen and (max-width:850px) {
+    .caixa{
+        background-color: brown;
+        width: calc(100% - 60px);
+        margin: 30px;
+        font-size: 20px;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .menu-desktop{
+        display: none;
+    }
 }
 
 #items-mobile{
     display: none;
-}
-
 }
