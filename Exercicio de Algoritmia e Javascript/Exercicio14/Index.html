@@ -4,28 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo Slide</title>
-    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
-    <!-- Add the new slick-theme.css if you want the default styling-->
-    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+    <title>Carrega automatica</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div>
-        <div class="your-class">
-            <div class="cx1"><img src="img/cx1.png" alt=""></div>
-            <div class="cx2">your content 2 <br>your content 2</div>
-            <div class="cx3"><h4>your content 3</h4> <p>your content 3</p></div>
-        </div>
 
-        <div class="your-class">
-            <div class="cx1"><img src="img/cx1.png" alt=""></div>
-            <div class="cx2">your content 2 <br>your content 2</div>
-            <div class="cx3"><h4>your content 3</h4> <p>your content 3</p></div>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li onclick="carregaPagina('pagina 1')">Pagina 1</li>
+                <li onclick="carregaPagina('pagina 2')">Pagina 2</li>
+                <li onclick="carregaPagina('pagina 3')">Pagina 3</li>
+                <li onclick="carregaPagina('pagina 4')">Pagina 4</li>
+            </ul>
+        </nav>
+        <div class="content">
+
         </div>
     </div>
-    <script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/slick/slick.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

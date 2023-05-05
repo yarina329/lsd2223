@@ -1,11 +1,10 @@
 $(document).ready(function(){
-    $('.feid').colorbox({
-        width:'50%',
-        rel: 'feid'
-    });
-
-    $('.regista').colorbox({
-        width: 400,
-        height: 300
+    $('.your-class').slick({
+        /*slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000,*/
+        autoplay: true,
+        dots: true,
+        pauseOnHover: false
     });
 });

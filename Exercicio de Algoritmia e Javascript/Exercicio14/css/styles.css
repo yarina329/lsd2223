@@ -1,59 +1,30 @@
 body{
-    background: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.slick-dots li.slick-active button:before {
-    color: yellow;
+ul, li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-.slick-dots li button:before{
-    color: green;
-}
-
-.your-class{
-    width: 70%;
-    margin-left: 15%;
-}
-
-.cx1 {
-    width: 100%;
-    background: violet;
-    /*background-image: url('/img/cx1.png');*/
-}
-
-.cx1 img{
-    width: 100%;
-}
-
-.cx2 {
-    width: 100%;
-    background:#b3bdf5;
-}
-
-.cx3 {
-    width: 100%;
-    background-image: url("../img/cx2.jpg") ;
-    background-repeat: no-repeat;
-    background-size:contain;
-    min-height: 400px;
-    color: white;
-}
-
-.cx3 p{
-    padding-left: 10px;
-}
-
-.cx3 h4{
-    color: white;
+nav li{
+    float: left;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    opacity: 0.8;
+    width: 25%;
 }
 
-.cx3 img{
-    width: 100%;
+.wrapper{
+    width: 70%;
+    float: left;
+    margin: 0 15%;
 }
 
-.slick-prev:before, .slick-next:before{
-    color: #810c0c;
+.content{
+    width: calc(70% - 2px);
+    float: left;
+    border: 1px solid grey;
+    margin-left: 15%;
+
+    min-height: 400px;
 }

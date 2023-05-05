@@ -1,25 +1,59 @@
-li{
-    width: 150px;
-    height: 100px;
-    overflow: hidden;
+body{
+    background: orange;
 }
 
-img{
+.slick-dots li.slick-active button:before {
+    color: yellow;
+}
+
+.slick-dots li button:before{
+    color: green;
+}
+
+.your-class{
+    width: 70%;
+    margin-left: 15%;
+}
+
+.cx1 {
+    width: 100%;
+    background: violet;
+    /*background-image: url('/img/cx1.png');*/
+}
+
+.cx1 img{
     width: 100%;
 }
 
-.wrapper{
-    width: 80%;
+.cx2 {
+    width: 100%;
+    background:#b3bdf5;
 }
 
-.area-registo{
-    width: 50%;
-    float: left;
+.cx3 {
+    width: 100%;
+    background-image: url("../img/cx2.jpg") ;
+    background-repeat: no-repeat;
+    background-size:contain;
     min-height: 400px;
+    color: white;
 }
 
-.area-login{
-    width: 50%;
-    float: left;
-    min-height: 200px;
+.cx3 p{
+    padding-left: 10px;
+}
+
+.cx3 h4{
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0.8;
+}
+
+.cx3 img{
+    width: 100%;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: #810c0c;
 }

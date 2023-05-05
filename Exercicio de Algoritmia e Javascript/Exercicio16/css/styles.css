@@ -1,0 +1,25 @@
+li{
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+.wrapper{
+    width: 80%;
+}
+
+.area-registo{
+    width: 50%;
+    float: left;
+    min-height: 400px;
+}
+
+.area-login{
+    width: 50%;
+    float: left;
+    min-height: 200px;
+}
