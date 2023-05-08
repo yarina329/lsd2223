@@ -1,0 +1,12 @@
+.o-meu-menu .navbar {
+    background-color: lightblue !important;
+}
+
+img{
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: red;
+}

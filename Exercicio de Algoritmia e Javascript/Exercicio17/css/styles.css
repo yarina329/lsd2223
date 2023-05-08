@@ -1,0 +1,24 @@
+.cx-1{
+    background: orange;
+}
+
+.cx-2{
+    background: salmon;
+}
+
+.cx-3{
+    background: yellow;
+}
+
+.cx-principal{
+    min-height: 100px;
+    background: rgb(197, 127, 182);
+}
+
+.opcao-1{
+    background: rgb(152, 127, 197);
+}
+
+.opcao-2{
+    background: rgb(127, 197, 176);
+}
