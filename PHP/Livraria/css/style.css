@@ -1,4 +1,4 @@
- /* RESET */
+/* RESET */
 
 html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
 dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
@@ -313,4 +313,30 @@ border-right:none;
 	font-size:18px;
 	text-align:left;
 	
+}
+
+.conteudo-lista{
+	width: 100%;
+	float: left;
+}
+
+.detalhe-livro{
+	width: 100%;
+	float: left;
+	margin: 20px 0;
+}
+
+.capa{
+	width: 50%;
+	float: left;
+}
+
+.capa img{
+	width: 100%;
+}
+
+.informacao{
+	width: calc(50% - 20px);
+	padding: 10px;
+	float: left;
 }
