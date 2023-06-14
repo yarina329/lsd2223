@@ -22,6 +22,20 @@
     }
     else
     {
+        //abrimos sessão -> para guardar os dados de registo do id
+        session_start();
+        $registo = mysqli_fetch_assoc($resultado);
+        
+        //guardamos nas variaveis os dados do cliente
+        $user_id = $registo['id_cliente'];
+        $user_nome = $registo['nome_cliente'];
+        
+        //criamos uma variavel de sessão 
+        $_SESSION['id_do_cliente'] = $user_id;
+        $_SESSION['nome_do_cliente'] = $user_nome;
+        
+        
+        //header('location:index.php?area=lista-de-livros&login=ok');
         echo "Login Correcto";
     }
 ?>

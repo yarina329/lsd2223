@@ -1,5 +1,7 @@
 <?php
   include('config.php');
+  include('funcoes.php');
+  session_start();
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -18,7 +20,7 @@
 	<div id="header">
 
     <?php include('menu.php'); ?>
-
+    
 	</div>
 
 	<div id="wrap">
