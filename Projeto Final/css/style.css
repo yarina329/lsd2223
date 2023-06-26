@@ -1,0 +1,80 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+/*          FOOTER          */
+
+footer{
+    width: 100%;
+    min-height: 200px;
+    background-color: #03A6A6;
+    padding: 20px;
+}
+
+.efeito-footer{
+    padding: 0px 20px;
+}
+
+footer img{
+    width: 50%;
+    position: relative;
+    padding: 20px 10px;
+}
+
+footer h2{
+    font-size: 25px;
+}
+
+footer p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caixa{
+    padding: 5px 20px;
+    color: #fff;
+}
+
+.efeito-cx{
+    padding-top: 15px;
+}
+
+.efeito-cx i{
+    padding: 5px 5px 0px 0px;
+    float: left;
+}
+
+.efeito-cx ul{
+    padding: 0px;
+}
+
+a{
+    line-break: unset;
+}
+
+a:link, a:visited {
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+/*******************/
+/*          Copy          */
+.copy{
+    width: 100%;
+    min-height: 20px;
+    background-color: #024059;
+}
+
+.copy p{
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+/*                    */
