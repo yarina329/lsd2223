@@ -12,6 +12,8 @@
 </head>
 <body>
     <div>
+        <?php include('rodapes/Header.php'); ?>
+        
         <?php include('rodapes/Footer.php'); ?>
     </div>
 </body>

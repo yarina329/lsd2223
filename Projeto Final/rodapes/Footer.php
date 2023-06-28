@@ -19,6 +19,7 @@
         <div class="col-3 caixa efeito-cx">
             <i class="fa-solid fa-phone"></i><p> +351 934470154</p>
             <i class="fa-regular fa-envelope"></i><p>info@dyanim.com</p>
+            <div class="inst"><i class="fa-brands fa-instagram"></i></div>
         </div>
     </div>
 </footer>
