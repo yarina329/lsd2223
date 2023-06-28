@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="font-awesome/css/all.css">
 </head>
 <body>
-    <div>
+    <div class="base-princ">
         <?php include('rodapes/Header.php'); ?>
-        
+        <div class="wrapper">
+edfqw
+        </div>
         <?php include('rodapes/Footer.php'); ?>
     </div>
 </body>

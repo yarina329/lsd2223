@@ -3,6 +3,15 @@ body{
     color: #fff;
 }
 
+.base-princ{
+    overflow-x: hidden;
+}
+
+/**********************************/
+.wrapper{
+    padding: 0px 50px;
+}
+
 /*          HEADER          */
 header{
     width: 100%;
@@ -15,21 +24,44 @@ header i{
     float: left;
 }
 
-header img{
-    width: 10%;
-    position: relative;
-    float: left;
+header .icons{
+    /*margin-right: 20px;
+    margin-top: 5px;*/
+    margin: 5px 50px 0px 5px;
+}
+
+header .text-email, .heart, .login, .cart{
+    float: right;
+    padding: 0px 5px;
 }
 
 
-header .col-2{
-    float: left;
-    margin-left: 0px;
-}
-
+/**************************************/
 .menu{
-    width: 100%;
     background-color: #03A6A6;
+}
+
+.logo-principal{
+    background-color: rgb(255, 0, 191);
+    padding: 50px;
+}
+
+.menu ul{
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.menu li{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0px 45px;
+    display: inline;
+}
+
+.logo-principal img{
+    width: 20%;
+    position: relative;
+    padding: 20px 10px;
 }
 
 
@@ -41,7 +73,8 @@ footer{
     width: 100%;
     min-height: 250px;
     background-color: #03A6A6;
-    padding: 20px;
+    padding: 50px;
+    float: left;
 }
 
 .efeito-footer{
@@ -51,7 +84,7 @@ footer{
 footer img{
     width: 100%;
     position: relative;
-    padding: 20px 10px;
+    padding: 0px 50px;
 }
 
 footer h2{
@@ -64,12 +97,12 @@ footer p{
 }
 
 .caixa{
-    padding: 5px 20px;
+    padding: 5px 25px;
     color: #fff;
 }
 
 .efeito-cx{
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .efeito-cx i{
