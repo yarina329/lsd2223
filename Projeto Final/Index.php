@@ -19,6 +19,6 @@ edfqw
         <?php include('rodapes/Footer.php'); ?>
     </div>
 </body>
-<script src="js/jquery-3.6.4"></script>
+<script src="js/jquery-3.6.4.min.js"></script>
 <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 </html>
