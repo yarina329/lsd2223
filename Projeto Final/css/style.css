@@ -76,7 +76,7 @@ footer{
     width: 100%;
     min-height: 250px;
     background-color: #024059;
-    padding: 50px 0px;
+    padding: 50px 50px;
     float: left;
 }
 
@@ -87,27 +87,34 @@ footer img{
 
 footer h2{
     font-size: 25px;
+    color: #fff;
 }
 
 footer p{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.caixa{
-    /*padding: 5px 25px;*/
     color: #fff;
 }
 
 
-.efeito-cx i{
-    padding: 5px 5px 0px 0px;
+.cx-mg i{
     float: left;
-    margin-left: 130px;
 }
 
-.efeito-cx .inst{
-    margin-left: 148px;
+.cx-mg i p{
+    padding: 0px 5px;
+}
+
+.cx-mg p{
+    text-align: right;
+}
+
+.footer-icon p{
+    float: left;
+}
+
+.footer-icon{
+    float: right;
 }
 
 a{
