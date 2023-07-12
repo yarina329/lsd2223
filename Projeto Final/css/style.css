@@ -15,7 +15,7 @@ body{
 /*          HEADER          */
 header{
     width: 100%;
-    height: 30px;
+    height: 40px;
     background-color: #024059;
     float: left;
 }
@@ -27,7 +27,7 @@ header i{
 header .icons{
     /*margin-right: 20px;
     margin-top: 5px;*/
-    margin: 5px 50px 0px 5px;
+    margin: 10px 50px 0px 10px;
 }
 
 header .text-email, .heart, .login, .cart{
@@ -99,6 +99,7 @@ footer p{
 
 .cx-mg i{
     float: left;
+    padding-left: 80px;
 }
 
 .cx-mg i p{
@@ -115,6 +116,10 @@ footer p{
 
 .footer-icon{
     float: right;
+}
+
+i.fa-brands.fa-instagram .inst {
+    padding-left: 40px;
 }
 
 a{

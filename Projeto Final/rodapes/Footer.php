@@ -13,9 +13,9 @@
                 <a href="#">Perguntas Frequentes</a>
             </div>
             <div class="col-4 cx-mg">
-                <i class="fa-solid fa-phone"></i><p> +351 934470154</p>
+                <i class="fa-solid fa-phone"></i><p>+351 934 470 154</p>
                 <i class="fa-regular fa-envelope"></i><p>info@dyanim.com</p>
-                <div class="footer-icon"><p>Segue-me:</p><i class="fa-brands fa-instagram"></i></div>
+                <div class="footer-icon"><p>Segue-me:</p><i class="fa-brands fa-instagram inst"></i></div>
             </div>
         </div>
     </div>
