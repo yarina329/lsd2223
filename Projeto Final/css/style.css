@@ -38,7 +38,7 @@ header .text-email, .heart, .login, .cart{
 
 /**************************************/
 .menu{
-    background-color: #03A6A6;
+    background-color: #037F8C;
 }
 
 .logo-principal{
@@ -67,6 +67,30 @@ header .text-email, .heart, .login, .cart{
     width: 65%;
 }
 
+
+/*                          */
+
+/*         CATEGORIA         */
+
+.categoria{
+    width: 100%;
+    background-color: #037F8C;
+    float: left;
+}
+
+.marg-categ{
+    margin: 20px;
+}
+
+.marg-categ a img{
+    width: 70%;
+    border-radius: 70%;
+}
+
+.categoria a:hover{
+    opacity: 0.6;
+
+}
 
 /*                          */
 
@@ -99,6 +123,7 @@ footer p{
 
 .cx-mg i{
     float: left;
+    margin-top: 5px;
     padding-left: 80px;
 }
 
@@ -112,6 +137,7 @@ footer p{
 
 .footer-icon p{
     float: left;
+    margin-right: -10px;
 }
 
 .footer-icon{
@@ -122,13 +148,14 @@ i.fa-brands.fa-instagram .inst {
     padding-left: 40px;
 }
 
+/*                          */
+
 a{
     line-break: unset;
 }
 
 a:link, a:visited {
     color: #fff;
-    text-align: left;
     text-decoration: none;
     display: inline-block;
 }
@@ -137,5 +164,5 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-/*                          */
+
 
