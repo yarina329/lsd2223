@@ -1,27 +1,27 @@
 <div class="categoria">
-    <div class="row marg-categ">
-        <div class="col-3">
+    <div class="marg-categ">
+        <div class="categ-1">
             <center>
                 <a href="#" title="Página de Chainsaw Man">
                     <img src="./imagens/icons-categoria/chainsawMan.jpg">
                 </a>
             </center>
         </div>
-        <div class="col-3">
+        <div class="categ-1">
             <center>
                 <a href="#" title="Página de Demon Slayer">
-                    <img src="./imagens/icons-categoria/demonSlayer.png">
+                    <img src="./imagens/icons-categoria/spyXFamily.png">
                 </a>
             </center>
         </div>
-        <div class="col-3">
+        <div class="categ-1">
             <center>
                 <a href="#" title="Página de Spy X Family">
                     <img src="./imagens/icons-categoria/spyXFamily.png">
                 </a>
             </center>
         </div>
-        <div class="col-3">
+        <div class="categ-1">
             <center>
                 <a href="#" title="Página de Naruto">
                     <img src="./imagens/icons-categoria/naruto.jpg">
@@ -40,14 +40,14 @@
                 <h2>Mais Informações</h2>
                 <a href="#" title="Página de Contacto">Contacto</a>
             </div>
-            <div class="col-4">
+            <div class="col-4 efeito-cx2">
                 <h2>Ajuda</h2>
                 <a href="#" title="Página de Perguntas Frequentes">Perguntas Frequentes</a>
             </div>
             <div class="col-4 cx-mg">
-                <i class="fa-solid fa-phone"></i><p>+351 934 470 154</p>
-                <i class="fa-regular fa-envelope"></i><p>info@dyanim.com</p>
-                <div class="footer-icon"><p>Segue-me:</p><i class="fa-brands fa-instagram inst"></i></div>
+                <p><i class="fa-solid fa-phone"></i>+351 934 470 154</p>
+                <p><i class="fa-regular fa-envelope"></i>info@dyanim.com</p>
+                <div class="footer-icon"><p>Segue-me: <i class="fa-brands fa-instagram inst"></i></p></div>
             </div>
         </div>
     </div>
