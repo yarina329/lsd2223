@@ -33,7 +33,7 @@
     </nav>
 
 
-    <div class="col-4 logo-principal logotipo"><img src="imagens/logo.png" alt="Logotipo"></div>
+    <div class="col-4 logo-principal"><img src="imagens/logo.png" alt="Logotipo"></div>
     <div class="col-8 efei-col">
         <nav>
             <ul class="menu-principal">
