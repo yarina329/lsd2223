@@ -1,3 +1,8 @@
+<?php
+  include('config.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,14 +52,18 @@
             </div>
 
             <div class="conteudo">
-                <div>
+                <h2>TOP 15</h2>
                     <div class="col-1">
                         <div class="produtos">
                             <div class="imageProduto">
-eggw
+                                <img src="imagens/teste.jpg" alt="">  
                             </div>
                             <div class="detalheProduto">
-gergewg
+                                <h5>35.00</h5><h5>€ /</h5>
+                                <br>
+                                <h4>32.50</h4><h4>€</h4>
+                                <p class="titlProduto">Figura Naruto</p>
+                                <p class="SubtitlProduto">Mandara Uchiba</p>
                             </div>
                         </div>
                     </div>
@@ -62,10 +71,14 @@ gergewg
                     <div class="col-1">
                         <div class="produtos">
                             <div class="imageProduto">
-egds
+                                <img src="imagens/teste.jpg" alt="">             
                             </div>
                             <div class="detalheProduto">
-fdg
+                                <h5>35.00</h5><h5>€ /</h5>
+                                <br>
+                                <h4>32.50</h4><h4>€</h4>
+                                <p class="titlProduto">Figura Naruto</p>
+                                <p class="SubtitlProduto">Mandara Uchiba</p>
                             </div>
                         </div>
                     </div>
@@ -73,10 +86,14 @@ fdg
                     <div class="col-1">
                         <div class="produtos">
                             <div class="imageProduto">
-sdg
+                                <img src="imagens/teste.jpg" alt="">     
                             </div>
                             <div class="detalheProduto">
-gs
+                                <h5>35.00</h5><h5>€ /</h5>
+                                <br>
+                                <h4>32.50</h4><h4>€</h4>
+                                <p class="titlProduto">Figura Naruto</p>
+                                <p class="SubtitlProduto">Mandara Uchiba</p>
                             </div>
                         </div>
                     </div>
@@ -84,15 +101,17 @@ gs
                     <div class="col-1">
                         <div class="produtos">
                             <div class="imageProduto">
-grs
+                                <img src="imagens/teste.jpg" alt="">     
                             </div>
                             <div class="detalheProduto">
-gsd
+                                <h5>35.00</h5><h5>€ /</h5>
+                                <br>
+                                <h4>32.50</h4><h4>€</h4>
+                                <p class="titlProduto">Figura Naruto</p>
+                                <p class="SubtitlProduto">Mandara Uchiba</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                
+                    </div>  
             </div>
 
             <?php include('front-end/Footer.php'); ?>
