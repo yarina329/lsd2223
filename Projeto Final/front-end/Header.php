@@ -18,7 +18,7 @@
                 <a href="#">ROUPA</a>
             </li>
             <li>
-                <a href="#">TÊXTEIS</a>
+                <a href="#">Mantas</a>
             </li>
             <li>
                 <a href="#">FIGURAS</a>
