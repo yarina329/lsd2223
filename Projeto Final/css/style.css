@@ -176,14 +176,15 @@ input::placeholder {
 
 .col-1 {
     width: calc(33.33% - 16%);
-    margin: 50px;
+    margin: 30px 50px;
     float: left;
 }
 
 .col-1 .imageProduto img{
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .detalheProduto{
@@ -199,6 +200,22 @@ input::placeholder {
     overflow: hidden;
     margin: 5px 0px;
 }
+
+/*           hover             
+.col-1:hover {
+    padding: 3px;
+}*/
+
+.conteudo_detalhes{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.col-1:hover {
+    border: 3px solid #000;
+    transform: scale(1.2);
+}
+/*                              */
 
 
 /*                           */

@@ -1,7 +1,7 @@
 <?php
-  include('config.php');
+  include('config/config.php');
+  include('funcoes/funcoes.php');
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +30,8 @@
                         <img src="imagens/Produtos/<?php echo $linha['foto_produto'];?>" title="Produto em desconto">
                     </div>
                     <div class="detalheProduto">
-                        <h5>35.00</h5><h5>€ /</h5>
+                        <h5><!--?php echo $linha_produtos['desconto_produto'];?></h5><h5>€ /--></h5>
+                        <br>
                         <h4>32.50</h4>€
                         <p class="titlProduto">Figura Naruto</p>
                         <p class="SubtitlProduto">Mandara Uchiba</p>
@@ -52,78 +53,36 @@
             </div>
 
             <div class="conteudo">
-
-            <!--?php
-    
-                $query_a_executar = "select * from produtos";
-                $resultado = mysqli_query($ligacao,$query_a_executar);
-
-                //print_r($resultado);
-
-                //while($linha = mysqli_fetch_assoc($resultado))
-                //{
-                //print_r($linha);
-            ?-->
                 <h2>TOP 15</h2>
-                    <div class="col-1">
-                        <div class="produtos">
-                            <div class="imageProduto">
-                            <img src="imagens/Produtos/<?php echo $linha['foto_produto'];?>" title="<?php echo $linha['nome_produto'];?>">
-                            </div>
-                            <div class="detalheProduto">
-                                <h5><?php echo $linha['desconto_produto'];?></h5><h5>€ /</h5>
-                                <br>
-                                <h4><?php echo $linha['preco_produto'];?></h4><h4>€</h4>
-                                <p class="titlProduto"><?php echo $linha['nomeserie_produto'];?></p>
-                                <p class="SubtitlProduto"><?php echo $linha['nome_produto'];?></p>
-                            </div>
-                        </div>
-                    </div>
+                        <?php
+                            $query_a_executar = "select * from produtos 
+                            inner join series on fk_idSerie = idSerie
+                            where ativo_desconto = 0";
+                            $resultado = mysqli_query($ligacao,$query_a_executar);
 
-                    <div class="col-1">
-                        <div class="produtos">
-                            <div class="imageProduto">
-                                <img src="imagens/teste.jpg" alt="">             
-                            </div>
-                            <div class="detalheProduto">
-                                <h5>35.00</h5><h5>€ /</h5>
-                                <br>
-                                <h4>32.50</h4><h4>€</h4>
-                                <p class="titlProduto">Figura Naruto</p>
-                                <p class="SubtitlProduto">Mandara Uchiba</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-1">
-                        <div class="produtos">
-                            <div class="imageProduto">
-                                <img src="imagens/teste.jpg" alt="">     
-                            </div>
-                            <div class="detalheProduto">
-                                <h5>35.00</h5><h5>€ /</h5>
-                                <br>
-                                <h4>32.50</h4><h4>€</h4>
-                                <p class="titlProduto">Figura Naruto</p>
-                                <p class="SubtitlProduto">Mandara Uchiba</p>
-                            </div>
-                        </div>
-                    </div>
+                            while($linha_produtos = mysqli_fetch_assoc($resultado))
+                            {
 
-                    <div class="col-1">
-                        <div class="produtos">
-                            <div class="imageProduto">
-                                <img src="imagens/teste.jpg" alt="">     
-                            </div>
-                            <div class="detalheProduto">
-                                <h5>35.00</h5><h5>€ /</h5>
-                                <br>
-                                <h4>32.50</h4><h4>€</h4>
-                                <p class="titlProduto">Figura Naruto</p>
-                                <p class="SubtitlProduto">Mandara Uchiba</p>
+                        ?>
+                        <div class="conteudo_detalhes">
+                            <div class="col-1">
+                                <div class="produtos">
+                                    <div class="imageProduto">
+                                    <img src="imagens/Produtos/<?php echo $linha_produtos['foto_produto'];?>" title="<?php echo $linha_produtos['nome_produto'];?>">
+                                    </div>
+                                    <div class="detalheProduto">
+                                        <h4><?php echo $linha_produtos['preco_produto'];?></h4><h4>€</h4>
+                                        <p class="titlProduto"><?php echo $linha_produtos['nome_serie'];?></p>
+                                        <p class="SubtitlProduto"><?php echo $linha_produtos['nome_produto'];?></p>
+                                    </div>  
+                                </div>
+                            
                             </div>
                         </div>
-                    </div>  
+                        <?php
+                                }
+                        ?>
             </div>
 
             <?php include('front-end/Footer.php'); ?>

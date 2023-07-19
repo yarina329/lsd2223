@@ -15,7 +15,7 @@
         
         <ul id="item-mobile">
             <li>
-                <a href="#">ROUPA</a>
+                <a href="front-end/paginas/Roupa.php">ROUPA</a>
             </li>
             <li>
                 <a href="#">Mantas</a>
@@ -38,7 +38,7 @@
         <nav>
             <ul class="menu-principal">
                 <li>
-                    <a href="#">ROUPA</a>
+                    <a href="Roupa.php">ROUPA</a>
                 </li>
                 <li>
                     <a href="#">TÊXTEIS</a>

@@ -1,3 +1,3 @@
 <?php
-  $ligacao = mysqli_connect('localhost','root','','DYAnim');
+  $ligacao = mysqli_connect('localhost','root','','dyanim');
 ?>
