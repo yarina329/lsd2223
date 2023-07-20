@@ -176,12 +176,12 @@ input::placeholder {
 
 .col-1 {
     width: calc(33.33% - 16%);
-    margin: 30px 50px;
+    margin: 40px 45px;
     float: left;
 }
 
 .col-1 .imageProduto img{
-    height: 190px;
+    height: 170px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -207,13 +207,17 @@ input::placeholder {
 }*/
 
 .conteudo_detalhes{
+    width: 100%;
+    margin: 0px 50px;
+    /*
     margin-left: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;*/
 }
 
 .col-1:hover {
     border: 3px solid #000;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    margin-bottom: 10px;
 }
 /*                              */
 
@@ -308,7 +312,7 @@ a{
 a:link, a:visited {
     color: #fff;
     text-decoration: none;
-    display: inline-block;
+    /*display: inline-block;*/
 }
   
 a:hover, a:active {

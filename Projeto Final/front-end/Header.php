@@ -7,7 +7,7 @@
     </div>
 </header>
 <div class="row menu" onresize="menuPrincipal()">
-    <div class="col-6 logo"><img src="imagens/logo.png" alt="Logotipo"></div>
+    <div class="col-6 logo"><a href="Index.php"><img src="imagens/logo.png" alt="Logotipo"></a></div>
     <nav class="col-4 menu-mobile">
         <span id="icon-menu" onclick="mostraMenu()">
             <i class="fa-solid fa-bars fa-3x"></i>
@@ -18,7 +18,7 @@
                 <a href="front-end/paginas/Roupa.php">ROUPA</a>
             </li>
             <li>
-                <a href="#">Mantas</a>
+                <a href="#">MANTAS</a>
             </li>
             <li>
                 <a href="#">FIGURAS</a>
@@ -33,24 +33,27 @@
     </nav>
 
 
-    <div class="col-4 logo-principal"><img src="imagens/logo.png" alt="Logotipo"></div>
+    <div class="col-4 logo-principal"><a href="Index.php"><img src="imagens/logo.png" alt="Logotipo"></a></div>
     <div class="col-8 efei-col">
         <nav>
             <ul class="menu-principal">
                 <li>
-                    <a href="Roupa.php">ROUPA</a>
+                    <a href="Index.php?area=roupa">ROUPA</a>
                 </li>
                 <li>
-                    <a href="#">TÊXTEIS</a>
+                    <a href="Index.php?area=mantas">MANTAS</a>
                 </li>
                 <li>
-                    <a href="#">FIGURAS</a>
+                    <a href="Index.php?area=figuras">FIGURAS</a>
                 </li>
                 <li>
-                    <a href="#">ACESSÓRIOS</a>
+                    <a href="Index.php?area=acessorios">ACESSÓRIOS</a>
                 </li>
                 <li>
-                    <a href="#">OUTROS</a>
+                    <a href="Index.php?area=outros">OUTROS</a>
+                </li>
+                <li>
+                    <a href="Index.php?area=listaProdutos">teste</a>
                 </li>
             </ul> 
         </nav>
