@@ -52,9 +52,6 @@
                 <li>
                     <a href="Index.php?area=outros">OUTROS</a>
                 </li>
-                <li>
-                    <a href="Index.php?area=listaProdutos">teste</a>
-                </li>
             </ul> 
         </nav>
         

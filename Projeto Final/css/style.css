@@ -261,6 +261,41 @@ input::placeholder {
 
 /*                          */
 
+/*          DETALHES PRODUTO           */
+
+.DtlProduto{
+    width: 100%;
+    background-color: #F2071B;
+}
+
+.DtlProduto p {
+    color: #000;
+}
+
+.visualizarProduto h4{
+    display: inline;
+}
+
+.visualizarProduto{
+    width: 50%;
+    margin: 50px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.visualizarProduto .imagem{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.visualizarProduto .detalhes{
+    display: inline;
+    margin: 20px 10px;
+}
+
+/*                          */
+
 /*          FOOTER          */
 
 footer{

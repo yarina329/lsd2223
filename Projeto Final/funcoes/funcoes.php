@@ -16,4 +16,10 @@
         return $lista_produtos;
     }
 
+    function direccionarPagina()
+    {
+        
+    }
+
 ?>
+

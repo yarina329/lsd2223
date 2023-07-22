@@ -32,10 +32,6 @@
                 if(isset($_GET['area'])){
                     $area_escolhida = $_GET['area'];
 
-                    //if($area_escolhida == 'listaProdutos'){
-                    //include('front-end/paginas/listaProdutos.php');
-                    //}
-                    //else
                     if($area_escolhida == 'roupa'){
                         include('front-end/paginas/Roupa.php');
                     }
@@ -44,6 +40,9 @@
                     }
                     else if($area_escolhida == 'figuras'){
                         include('front-end/paginas/Figuras.php');
+                    }
+                    else if($area_escolhida == 'detalhesProduto'){
+                        include('front-end/paginas/DetalhesProduto.php');
                     }
                     else if($area_escolhida == 'acessorios'){
                         include('front-end/paginas/Acessorio.php');
