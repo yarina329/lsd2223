@@ -1,21 +1,19 @@
 <div class="conteudo">
             <?php
-                $query_a_executar = "select * from categorias
+                $query_executar = "select DISTINCT * from categorias
                 inner join produtos on fk_idCategoria = idCategoria
                 inner join series on fk_idSerie = idSerie
-                where ativo_desconto = 0 and idCategoria = 2";
-                echo"Entrei";
-
-                $resultado = mysqli_query($ligacao,$query_a_executar);
-
-                $linha_produtos = mysqli_fetch_assoc($resultado)
+                where ativo_desconto = 0 and ativo_produto = 1 and idCategoria = 2";
+                $resultado = mysqli_query($ligacao,$query_executar);
             ?>
 
-            <h2><?php echo $linha_produtos['nome_categoria']?></h2>
+            <h2>MANTAS</h2>
                 <?php
                     while($linha_produtos = mysqli_fetch_assoc($resultado))
                     {
+                        $idProduto = $linha_produtos['idProduto'];
                 ?>
+                <a href="DetalhesProduto.php?id=<?php echo $idProduto; ?>">
                 <div class="conteudo_detalhes">
                     <div class="col-1">
                         <div class="produtos">
@@ -30,7 +28,8 @@
                         </div>
                     </div>
                 </div>
+                    </a>
             <?php
                 }
             ?>
-        </div>
+</div>
