@@ -3,7 +3,7 @@
                 $query_a_executar = "select * from categorias
                 inner join produtos on fk_idCategoria = idCategoria
                 inner join series on fk_idSerie = idSerie
-                where ativo_desconto = 0 and idCategoria = 3";
+                where ativo_desconto = 0 and ativo_produto = 1 and idCategoria = 3";
                 $resultado = mysqli_query($ligacao,$query_a_executar);
 
                 $linha_produtos = mysqli_fetch_assoc($resultado);
