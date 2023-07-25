@@ -20,16 +20,13 @@
 </head>
 <body>
         <div class="base-princ">
-            <?php include('front-end/Header.php'); ?>
-            <div class="imgPrincipal">
-                    <img src="./imagens/teste.jpg" alt="">
-            </div>
+            <?php include('back-end/HeaderFrontEnd.php'); ?>
 
             <div>
             <?php 
 
                 //verificar a variavel de GET com o nome AREA existe
-                if(isset($_GET['area'])){
+                /*if(isset($_GET['area'])){
                     $area_escolhida = $_GET['area'];
 
                     if($area_escolhida == 'roupa'){
@@ -54,13 +51,12 @@
                         include('erro.php');
                     }
                 }
-                else{
-                    include('front-end/paginas/listaProdutos.php');
-                }
+                else{*/
+                    include('back-end/Login.php');
+                /*}*/
             
             ?>
             </div>
-            <?php include('front-end/Categoria.php'); ?>
             <?php include('front-end/Footer.php'); ?>
         </div>
 </body>
