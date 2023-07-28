@@ -521,10 +521,12 @@ a:hover, a:active {
     display: inline;
 }
 .totalCart{
-    margin: 20px;
+    margin: 20px 100px 20px 20px;
 }
-/*
-.efect-table{
-    width: 80%;
-}*/
+
+.totalCart .barra-cart{
+    width: 70%;
+    border: 4px solid #024059;
+    border-radius: 5px;
+}
 /*                                    */

@@ -17,7 +17,7 @@
 
         ?>
         <div class="row">
-            <div class="col-10">
+            <div class="col-8">
         <div class="tabela-carrinho">
             <table class="table efect-table">
                 <thead class="cabec-tabela">
@@ -36,16 +36,20 @@
                         <th></th>
                         <th>
                         <script type="text/JavaScript">
-                            $(function({
-                                var preco  = <?php $detalhes_produtos['preco_produto'];?>;
+                                var preco  = <?php echo $detalhes_produtos['preco_produto'];?>;
                                 var quant = 2;
 
                                 var total = preco * quant;
 
-                                print_r(total);
-                            }))
-                            
-                        </script>
+                                document.write(total);
+                                return total;
+
+                                /*document.getElementById("demo").innerHTML = x;
+
+                                function myFunction(a, b) {
+                                return a * b;   
+                                } */
+                            </script>
                         </th>
                         <th></th>
                     </tr>
@@ -53,12 +57,17 @@
             </table>
         </div></div>
 
-        <div class="col-2">
+        <div class="col-4">
             <div class="totalCart">
                 <h4>Total do Pedido</h4>
+                <div class="barra-cart"></div>
             </div>
-            
-        </div></div>
+            <div>
+                <p>Total</p>
+                <p id="totl"></p>
+            </div>
+        </div>
+    </div>
     <?php
     }
     ?>
