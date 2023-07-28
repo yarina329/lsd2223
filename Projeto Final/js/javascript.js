@@ -24,15 +24,29 @@ function menuPrincipal()
     }
 }
 
-function  teste(){
-    document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide( '#card-carousel', {
-          perPage    : 2,
-          breakpoints: {
-              640: {
-                  perPage: 1,
-              },
-          },
-    } ).mount();
-  } );
+function validaFormularioMelhor(){
+
+    document.getElementById('obrigatorio_email').style.display = 'none';
+    document.getElementById('obrigatorio_password').style.display = 'none';
+    document.getElementById('erro').innerText = '';
+
+    email_inserido = document.getElementById('email').value;
+    password_inserido = document.getElementById('password').value;
+
+    if(email_inserido ==''){
+        document.getElementById('obrigatorio_email').style.display = 'block';
+    }
+    
+    if(password_inserido ==''){
+        document.getElementById('obrigatorio_password').style.display = 'block';
+    }
+    
+    if(email_inserido == '' || password_inserido == ''){
+        document.getElementById('erro').innerText = 'Preencha os campos assinalados';
+        return false;
+    }
+    else {
+        return true;
+    }
+
 }

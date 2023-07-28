@@ -1,11 +1,6 @@
-<header>
-    <div class="icons">
-        <div class="heart"><i class="fa-solid fa-heart"></i></div>
-        <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
-        <div class="login"><a href="Index2.php"><i class="fa-solid fa-user"></i></a></div>
-        <div class="text-email">teste@gmail.com</div>
-    </div>
-</header>
+<?php
+    include('front-end/miniHeader.php');
+?>
 <div class="row menu" onresize="menuPrincipal()">
     <div class="col-6 logo">
         <a href="Index.php"><img src="imagens/logo.png" alt="Logotipo"></a>

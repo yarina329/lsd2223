@@ -35,13 +35,13 @@
                             where ativo_desconto = 0 and ativo_produto=1";
                             $result = mysqli_query($ligacao,$query_a_executar);
 
-
+                            session_start();
                             while($linha_produtos = mysqli_fetch_assoc($result))
                             {
-                                $idProduto = $linha_produtos['idProduto'];
-
+                               
+                                $_SESSION['id_Produto']= $linha_produtos['idProduto'];
                         ?>
-                        <a href="DetalhesProduto.php?id=<?php echo $idProduto; ?>">
+                        <a href="Index.php?area=detalhesProduto">
                             <div class="conteudo_detalhes">
                                 <div class="col-1">
                                     <div class="produtos">

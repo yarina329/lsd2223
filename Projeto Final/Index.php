@@ -50,6 +50,12 @@
                     else if($area_escolhida == 'outros'){
                         include('front-end/paginas/Outros.php');
                     }
+                    else if($area_escolhida == 'detalhesProduto'){
+                        include('front-end/paginas/DetalhesProduto.php');
+                    }
+                    else if($area_escolhida == 'carrinho'){
+                        include('front-end/paginas/Carrinho.php');
+                    }
                     else{
                         include('erro.php');
                     }

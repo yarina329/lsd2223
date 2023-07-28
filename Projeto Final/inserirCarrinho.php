@@ -1,6 +1,6 @@
 <?php
     include('config.php');
-
+/*
     $idProduto = $_POST['idProduto'];
     $idCliente = $_POST['idCliente'];
     $quantidade = $_POST['quantidade'];
@@ -13,8 +13,9 @@
     '".$quantidade."')";
 
     mysqli_query($ligacao,$query_de_registo);
-    
+    */
     //echo $query_de_registo;
+    echo ('entrei');
 
-    header('location:DetalhesProduto.php?status=ok');
+    header('location:Index.php?area=carrinho');
 ?>

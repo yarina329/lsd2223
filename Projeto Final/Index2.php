@@ -25,16 +25,15 @@
             <div>
             <?php 
 
-                //verificar a variavel de GET com o nome AREA existe
-                /*if(isset($_GET['area'])){
+                if(isset($_GET['area'])){
                     $area_escolhida = $_GET['area'];
 
-                    if($area_escolhida == 'roupa'){
-                        include('front-end/paginas/Roupa.php');
+                    if($area_escolhida == 'geral'){
+                        include('back-end/GeralAdmin.php');
                     }
-                    else if($area_escolhida == 'mantas'){
-                        include('front-end/paginas/Manta.php');
-                    }
+                    else if($area_escolhida == 'registo'){
+                        include('back-end/Registo.php');
+                    }/*
                     else if($area_escolhida == 'figuras'){
                         include('front-end/paginas/Figuras.php');
                     }
@@ -46,14 +45,14 @@
                     }
                     else if($area_escolhida == 'outros'){
                         include('front-end/paginas/Outros.php');
-                    }
+                    }*/
                     else{
                         include('erro.php');
                     }
                 }
-                else{*/
+                else{
                     include('back-end/Login.php');
-                /*}*/
+                }
             
             ?>
             </div>
