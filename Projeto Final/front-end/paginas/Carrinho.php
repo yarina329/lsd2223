@@ -1,3 +1,9 @@
+<style>
+    .imgPrincipal{
+        display: none;
+    }
+</style>
+
 <?php
     if(!isset($_SESSION['id_Cliente']))
     {
@@ -5,11 +11,12 @@
     }
     else
     {
-        $idProduto = $_SESSION['id_Produto'];
-        $query_a_executar = "select * from categorias
-        inner join produtos on fk_idCategoria = idCategoria
-        inner join series on fk_idSerie = idSerie
-        where idProduto = ".$idProduto;
+        $idCliente = $_SESSION['id_Cliente'];
+        //$idProduto = $_SESSION['id_Produto'];
+        $query_a_executar = "select * from produtos
+        inner join carrinhos on fk_idProduto = idProduto
+        inner join clientes on fk_idCliente = idCliente
+        where fk_idCliente = ".$idCliente;
         
         $resultadoP = mysqli_query($ligacao,$query_a_executar);
 
@@ -33,25 +40,15 @@
                     <tr>
                         <th><img src="imagens/Produtos/<?php echo $detalhes_produtos['foto_produto'];?>" title="<?php echo $detalhes_produtos['nome_produto'];?>"><?php echo $detalhes_produtos['nome_produto'];?></th>
                         <th><h4><?php echo $detalhes_produtos['preco_produto'];?></h4><h4>€</h4></th>
-                        <th></th>
                         <th>
-                        <script type="text/JavaScript">
-                                var preco  = <?php echo $detalhes_produtos['preco_produto'];?>;
-                                var quant = 2;
-
-                                var total = preco * quant;
-
-                                document.write(total);
-                                return total;
-
-                                /*document.getElementById("demo").innerHTML = x;
-
-                                function myFunction(a, b) {
-                                return a * b;   
-                                } */
-                            </script>
+                            <button id="minus" class="botao-quantidade">&#10134;</button>
+                            <a id="qtd" class="quantidade">0</a>
+                            <button id="plus" class="botao-quantidade">&#10133;</button>
                         </th>
-                        <th></th>
+                        <th id="total">
+                            
+                        </th>
+                        <th><a href=""><i class="fa-solid fa-trash-can"></i></a></th>
                     </tr>
                 </tbody>
             </table>
@@ -68,6 +65,41 @@
             </div>
         </div>
     </div>
-    <?php
+    
+<script>
+
+function remover(){
+    let el = document.getElementById("qtd")
+    let valor = parseInt(el.text)
+    valor -= 1
+    el.text = valor
+    atualizarTotal()
+}
+
+function adicionar(){
+    let el = document.getElementById("qtd")
+    let valor = parseInt(el.text)
+    valor += 1
+    el.text = valor
+    atualizarTotal()
+}
+
+function atualizarTotal(){
+    let total = 0
+    let el = document.getElementById("qtd")
+    let valor = parseInt(el.text)
+    let preco = parseInt(<?php echo $detalhes_produtos['preco_produto'];?>)
+    total = valor * preco
+    document.getElementById("total").textContent = total
+}
+elementplus = document.getElementById("plus")
+elementplus.addEventListener("click", adicionar); 
+
+elementminus = document.getElementById("minus")
+elementminus.addEventListener("click", remover); 
+
+</script>
+
+<?php
     }
     ?>

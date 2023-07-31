@@ -1,4 +1,8 @@
-
+<style>
+    .imgPrincipal{
+        display: none;
+    }
+</style>
         <div>
             <?php
                 $idProduto = $_SESSION['id_Produto'];
@@ -22,22 +26,6 @@
                         <h4><?php echo $detalhes_produtos['preco_produto'];?></h4><h4>€</h4>
                         <p><?php echo $detalhes_produtos['nome_produto'];?></p>
                         <p><b></b><?php echo $detalhes_produtos['nome_serie'];?></p>
-                        <!--
-                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                        <button class="btn btn-link px-2"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                            <i class="fas fa-minus"></i>
-                        </button>
-
-                        <input id="form1" min="0" name="quantity" value="1" type="number"
-                            class="form-control form-control-sm" />
-
-                        <button class="btn btn-link px-2"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                            <i class="fas fa-plus"></i>
-                        </button>
-                        </div>
--->
                         <p><?php echo $detalhes_produtos['sugestao_produto'];?></p>
                         <button><b>Adicionar</b></button>
                     </div>

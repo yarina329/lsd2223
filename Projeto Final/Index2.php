@@ -33,10 +33,10 @@
                     }
                     else if($area_escolhida == 'registo'){
                         include('back-end/Registo.php');
-                    }/*
-                    else if($area_escolhida == 'figuras'){
-                        include('front-end/paginas/Figuras.php');
                     }
+                    else if($area_escolhida == 'addprod'){
+                        include('back-end/AdminAddProd.php');
+                    }/*
                     else if($area_escolhida == 'detalhesProduto'){
                         include('front-end/paginas/DetalhesProduto.php');
                     }

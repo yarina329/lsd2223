@@ -56,6 +56,9 @@
                     else if($area_escolhida == 'carrinho'){
                         include('front-end/paginas/Carrinho.php');
                     }
+                    else if($area_escolhida == 'mensagem'){
+                        include('front-end/paginas/mensagem.php');
+                    }
                     else{
                         include('erro.php');
                     }

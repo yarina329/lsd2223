@@ -1,21 +1,15 @@
 <?php
-    include('config.php');
-/*
-    $idProduto = $_POST['idProduto'];
-    $idCliente = $_POST['idCliente'];
-    $quantidade = $_POST['quantidade'];
+    include('config/config.php');
 
-    $query_de_registo = "insert into clientes
-    (idProduto, idCliente, quantidade)
+    session_start();
+    $idProduto = $_SESSION['id_Produto'];
+    $idCliente = $_SESSION['id_Cliente'];
+    
+    $queryinserir = "insert into carrinhos
+    (fk_idProduto, fk_idCliente)
     values
-    ('".$idProduto."',
-    '".$idCliente."',
-    '".$quantidade."')";
+    (".$idProduto.",".$idCliente.")";
 
-    mysqli_query($ligacao,$query_de_registo);
-    */
-    //echo $query_de_registo;
-    echo ('entrei');
-
-    header('location:Index.php?area=carrinho');
+    mysqli_query($ligacao,$queryinserir);
+    //header('location:Index.php?area=carrinho&status=ok');
 ?>
