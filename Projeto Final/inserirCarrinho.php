@@ -10,6 +10,8 @@
     values
     (".$idProduto.",".$idCliente.")";
 
+    echo ($queryinserir);
+    die();
     mysqli_query($ligacao,$queryinserir);
     //header('location:Index.php?area=carrinho&status=ok');
 ?>

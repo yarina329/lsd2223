@@ -423,6 +423,7 @@ a:hover, a:active {
     background-size: cover;
     width: 100%;
     height: 530px;
+    position: relative;
 }
 
 .cx{
@@ -492,7 +493,7 @@ a:hover, a:active {
     display: none ;
     color: #F2071B;
     float: right;
-    padding: 9px;
+    padding: 7px;
 }
 
 .cx-login #erro{
@@ -567,6 +568,7 @@ a:hover, a:active {
     padding: 25px 50px 0px 50px;
 }
 
+
 .addProd .perfil img{
     border-radius: 50%;
     width: 70%;
@@ -580,6 +582,10 @@ a:hover, a:active {
     margin-top: 5px;
 }
 
+.addProd .perfil .listaGeral{
+    margin: 50px 0px;
+}
+
 .addProd .perfil .listaGeral a{
     display: flex;
     background-color: #fff;
@@ -588,6 +594,23 @@ a:hover, a:active {
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
+}
+
+.addProd .perfil .listaGeral .linklist {
+    color: white;
+    background-color: brown;
+}
+
+.addProd .perfil .listaGeral a i{
+    float: right;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: 5px;
+}
+
+.addProd .perfil .listaGeral a:hover{
+    color: white;
+    background-color: brown;
 }
 
 .addProd .cx-1{
@@ -614,4 +637,146 @@ a:hover, a:active {
     width: 62.2%;
 }
 
+.cx-Add{
+    width: 100%;
+    margin: 20px 0px;
+    float: right;
+}
+
+.cx-Add .formulaAdd .mensagem{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.cx-Add .formulaAdd{
+    background-color: #B1D7DB;
+    padding: 40px 70px;
+}
+
+.cx-Add .formulaAdd form{
+    overflow: hidden;
+}
+
+.cx-Add .formulaAdd form ul li{
+    color: #000;
+    margin-top: 20px;
+}
+
+.cx-Add .formulaAdd form ul li button{
+    float: right;
+    margin-top: 20px;
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cx-Add .formulaAdd form ul li input, textarea{
+    border-radius: 5px;
+    float: right;
+    clear: both;
+    width: 50%;
+    text-align: center;
+}
+
+.cx-Add .formulaAdd form ul li select{
+    border-radius: 5px;
+    float: right;
+    width: 50%;
+    text-align: center;
+    border-color: #000;
+}
+
 /*                                    */
+
+/*              LISTA PRODUTO              */
+.my-custom-scrollbar {
+    height: 300px;
+    overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+    margin: 35px 0px;
+}
+
+.my-custom-scrollbar table tbody a i{
+    color: #024059;
+}
+
+/*                                    */
+
+/*               REGISTO                */
+.cx-regist{
+    width: 30%;
+    min-height: 350px;
+    background-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cx-regist .icon-voltar i{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.cx-regist form{
+    padding: 20px 0px
+}
+
+.cx-regist form input::placeholder{
+    color:#000;
+    font-weight: bold;
+    text-align: center;
+}
+.cx-regist input{
+    color: #000 ;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.cx-regist input[type="password"], .tamanhoPwd{
+    width: 90%;
+    
+}
+
+.cx-regist .tamanho{
+    width: 45%;
+}
+
+.cx-regist .login-button{
+    margin-top: 10%;
+}
+
+.cx-regist button{
+    width: 80%;
+    background-color: #fff;
+    color: #037F8C;
+    font-weight: bold;
+    border-color: #037F8C;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 5px 31px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.cx-regist button:hover{
+    background-color: #D94E4E;
+    color: #fff;
+    border-color: #D94E4E;
+}
+
+.cx-regist button b{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cx-regist form span{
+    display: none ;
+    color: #F2071B;
+    float: right;
+    padding: 7px;
+}

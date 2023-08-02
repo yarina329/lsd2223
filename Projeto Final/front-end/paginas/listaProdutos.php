@@ -31,7 +31,7 @@
                 <h2>TOP 15</h2>
                         <?php
                             $query_a_executar = "select * from produtos 
-                            inner join series on fk_idSerie = idSerie
+                            inner join series on series_idSerie = idSerie
                             where ativo_desconto = 0 and ativo_produto=1";
                             $result = mysqli_query($ligacao,$query_a_executar);
 

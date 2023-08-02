@@ -1,6 +1,5 @@
 <?php
   include('config/config.php');
-  include('funcoes/funcoes.php');
   session_start();
 ?>
 
@@ -28,26 +27,29 @@
                 if(isset($_GET['area'])){
                     $area_escolhida = $_GET['area'];
 
-                    if($area_escolhida == 'geral'){
-                        include('back-end/GeralAdmin.php');
-                    }
-                    else if($area_escolhida == 'registo'){
+                    if($area_escolhida == 'registo'){
                         include('back-end/Registo.php');
                     }
                     else if($area_escolhida == 'addprod'){
                         include('back-end/AdminAddProd.php');
-                    }/*
-                    else if($area_escolhida == 'detalhesProduto'){
-                        include('front-end/paginas/DetalhesProduto.php');
                     }
-                    else if($area_escolhida == 'acessorios'){
-                        include('front-end/paginas/Acessorio.php');
+                    else if($area_escolhida == 'listaprodut'){
+                        include('back-end/listaProduto.php');
                     }
-                    else if($area_escolhida == 'outros'){
-                        include('front-end/paginas/Outros.php');
-                    }*/
+                    else if($area_escolhida == 'listacarrinho'){
+                        include('back-end/listaCarrinho.php');
+                    }
+                    else if($area_escolhida == 'listacliente'){
+                        include('back-end/listaCliente.php');
+                    }
+                    else if($area_escolhida == 'geralcliente'){
+                        include('back-end/geralCliente.php');
+                    }
+                    else if($area_escolhida == 'gerallistaproduto'){
+                        include('back-end/geralListaProduto.php');
+                    }
                     else{
-                        include('erro.php');
+                        include('./erro.php');
                     }
                 }
                 else{

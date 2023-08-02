@@ -1,4 +1,3 @@
-  
 <?php
     if(!isset($_SESSION['id_Cliente']))
     {
@@ -8,26 +7,18 @@
     {
         if($_SESSION['tipoclientes_idTipoCliente'] == 1)
         {
-        $idCliente = $_SESSION['id_Cliente'];
-        $query_a_executar = "select email_cliente from clientes
-        where idCliente = ".$idCliente;
-        
-        $resultCliente = mysqli_query($ligacao,$query_a_executar);
-
-        $infCliente = mysqli_fetch_assoc($resultCliente);
-
-        $_SESSION['email'] = $infCliente['email_cliente'];
+        $_SESSION['email'];
         ?>
         <div class="addProd">
             <div class="row">
                 <div class="col-3 perfil">
                     <div>
                         <img src="imagens/perfil/perfil.png" title="Imagem de perfil">
-                        <p><?php echo $infCliente['email_cliente'];?></p>
+                        <p><?php echo $_SESSION['email'];?></p>
                     </div>
                     <div class="listaGeral">
-                    <a href="Index2.php?area=addprod" class="linklist">Adicionar Produto <i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=listaprodut">Lista de Produtos <i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=addprod">Adicionar Produto <i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=listaprodut" class="linklist">Lista de Produtos <i class="fa-solid fa-chevron-right"></i></a>
                         <a href="Index2.php?area=listacarrinho">Lista de Carrinho <i class="fa-solid fa-chevron-right"></i></a>
                         <a href="Index2.php?area=listacliente">Lista de Clientes <i class="fa-solid fa-chevron-right"></i></a>
                     </div>
@@ -61,10 +52,43 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <?php include('back-end/TabelaInserirProd.php');?>
+                            
+                        <div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+                            <table class="table table-bordered table-striped mb-0">
+                            <thead>
+                                <tr>
+                                <th scope="col">Nº.</th>
+                                <th scope="col">Nome Produto</th>
+                                <th scope="col">Ativo</th>
+                                <th scope="col">Editar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                                $query_a_executar = "select * from produtos";
+                        
+                                $result = mysqli_query($ligacao,$query_a_executar);
+
+                                session_start();
+                                while($listaprodt = mysqli_fetch_assoc($result))
+                                {
+                                $_SESSION['idProduto'] = $listaprodt['idProduto'];
+                            
+                            ?>
+                                <tr>
+                                <th scope="row"><?php echo $listaprodt['idProduto']; ?></th>
+                                <td><?php echo $listaprodt['nome_produto']; ?></td>
+                                <td><?php echo $listaprodt['ativo_produto']; ?></td>
+                                <td><a href="update.php"><i class="fa-solid fa-trash-can"></i></a>  <a href="update2.php"><i class="fa-solid fa-eye"></i></a></td>
+                                </tr>
+                            <?php
+                            }
+                            ?>
+                            </tbody>
+                            </table>
+
                         </div>
-                    </div>
-                </div>
             </div>
         </div>
     <?php

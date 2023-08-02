@@ -11,7 +11,7 @@
                     </ul>
                     <div class="login-button">
                         <button><b>LOGIN</b></button>
-                        <button onclick="window.location.href='back-end/Index2.php?area=registo';"><b>REGISTO</b></button>
+                        <button onclick="window.location.href='Index2.php?area=registo'"><b>REGISTO</b></button>
                     </div>
                 <div id="erro">
                 </div>

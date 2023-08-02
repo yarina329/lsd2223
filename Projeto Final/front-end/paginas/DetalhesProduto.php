@@ -7,8 +7,8 @@
             <?php
                 $idProduto = $_SESSION['id_Produto'];
                 $query_a_executar = "select * from categorias
-                inner join produtos on fk_idCategoria = idCategoria
-                inner join series on fk_idSerie = idSerie
+                inner join produtos on categorias_idCategoria = idCategoria
+                inner join series on series_idSerie = idSerie
                 where idProduto = ".$idProduto;
         
                 $resultadoP = mysqli_query($ligacao,$query_a_executar);

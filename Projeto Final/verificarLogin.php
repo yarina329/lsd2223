@@ -5,36 +5,47 @@
     $user = $_POST['emailL'];
     $pwd = $_POST['passwordL'];
 
+    echo ($user.$pwd);
     $query = "select * from clientes 
-    inner join tipoClientes on fk_idTipo = idTipoCliente
+    inner join tipoclientes on tipoclientes_idTipoCliente = idTipoCliente
     where email_cliente = '$user'
     and password_cliente = '$pwd'";
 
     $resultado = mysqli_query($ligacao,$query);
 
-    //$TipoCliente = mysqli_fetch_assoc($resultado);
     
     $registo = mysqli_fetch_assoc($resultado);
     //$idTipoCliente = $TipoCliente['fk_idTipo'];
 
     $numero_de_users_encontrados = $resultado->num_rows;
 
-    if($numero_de_users_encontrados == 1 && $registo['fk_idTipo'] == 1)
+    if($numero_de_users_encontrados == 1 && $registo['tipoclientes_idTipoCliente'] == 1)
     {
-    
         session_start();
         
         $user = $registo['idCliente'];
         $email = $registo['email_cliente'];
+        $tipo = $registo['tipoclientes_idTipoCliente'];
         
         $_SESSION['id_Cliente'] = $user;
         $_SESSION['emailCliente'] = $email;
+        $_SESSION['tipoclientes_idTipoCliente'] = $tipo;
 
-        header('location:Index.php');
+        header('location:Index2.php?area=addprod');
     }
-    else if($numero_de_users_encontrados == 1 && $idTipoCliente == 2)
+    else if($numero_de_users_encontrados == 1 && $registo['tipoclientes_idTipoCliente'] == 2)
     {
-        header('location:/Index.php?area=lista-de-livros&login=ok');
+        session_start();
+        
+        $user = $registo['idCliente'];
+        $email = $registo['email_cliente'];
+        $tipo = $registo['tipoclientes_idTipoCliente'];
+        
+        $_SESSION['id_Cliente'] = $user;
+        $_SESSION['emailCliente'] = $email;
+        $_SESSION['tipoclientes_idTipoCliente'] = $tipo;
+
+        header('location:Index2.php?area=geralcliente');
     }
     else if($numero_de_users_encontrados != 1)
     {

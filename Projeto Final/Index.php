@@ -1,6 +1,5 @@
 <?php
   include('config/config.php');
-  include('funcoes/funcoes.php');
   session_start();
 ?>
 
