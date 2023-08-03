@@ -21,7 +21,9 @@
         <div class="base-princ">
             <?php include('front-end/Header.php'); ?>
             <div class="imgPrincipal">
-                    <img src="./imagens/teste.jpg" alt="">
+                <video autoplay muted>
+                    <source src="imagens/video/Vrs1.mp4">
+                </video>
             </div>
 
             <div>

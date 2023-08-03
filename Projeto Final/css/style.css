@@ -45,7 +45,7 @@ h4, .titlProduto, .SubtitlProduto{
     margin-right: auto;
 }
 
-.imgPrincipal img{
+.imgPrincipal video{
     width: 100%;
     height: 400px;
 }
