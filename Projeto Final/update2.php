@@ -3,7 +3,7 @@
     include('config/config.php');
     session_start();
 
-    $id_produto = $_SESSION['idProduto'];
+    $id_produto = $_GET['id'];
 
     $query = "update produtos SET ativo_produto = 1
     WHERE idProduto = ".$id_produto;

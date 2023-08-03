@@ -26,9 +26,10 @@
                         <p><?php echo $infCliente['email_cliente'];?></p>
                     </div>
                     <div class="listaGeral">
-                    <a href="Index2.php?area=geralcliente" class="linklist">Geral<i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=gerallistaproduto">Lista de Produtos <i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=geralcomentario">Lista de Carrinho <i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=geralcliente" class="linklist">Geral<i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=gerallistaproduto">Lista de Produtos<i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=geralcomentario">Comentário<i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=gerallistacomentario">Lista de Comentários<i class="fa-solid fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-9 cx-1">
@@ -67,12 +68,12 @@
                                 </div>
                                 <form method="post" action="atualizacaoCliente.php" enctype="multipart/form-data">
                                     <ul>
-                                        <li>Nome: <input type="text" name = "nomeC" placeholder="<?php echo $infCliente['nome_cliente']; ?>"></li>
-                                        <li>Email: <input type="text" name = "email" placeholder="<?php echo $infCliente['email_cliente']; ?>"></li>
-                                        <li>Password: <input type="text" name = "password" placeholder="<?php echo $infCliente['password_cliente']; ?>"></li>
-                                        <li>Morada: <input type="text" name = "morada" placeholder="<?php echo $infCliente['morada_cliente']; ?>"></li>
-                                        <li>Codigo Postal: <input type="text" name = "codpostal" placeholder="<?php echo $infCliente['codPostal_cliente']; ?>"></li>
-                                        <li>Telemóvel: <input type="text" name = "tlm" placeholder="<?php echo $infCliente['telemovel_cliente']; ?>"></li>
+                                        <li>Nome: <input type="text" name = "nomeC" placeholder="<?php echo $infCliente['nome_cliente']; ?>" require value="<?php echo $infCliente['nome_cliente']; ?>"></li>
+                                        <li>Email: <input type="text" name = "email" placeholder="<?php echo $infCliente['email_cliente']; ?>" require value="<?php echo $infCliente['email_cliente']; ?>"></li>
+                                        <li>Password: <input type="text" name = "password" placeholder="<?php echo $infCliente['password_cliente']; ?>" require value="<?php echo $infCliente['password_cliente']; ?>"></li>
+                                        <li>Morada: <input type="text" name = "morada" placeholder="<?php echo $infCliente['morada_cliente']; ?>" require value="<?php echo $infCliente['morada_cliente']; ?>"></li>
+                                        <li>Codigo Postal: <input type="text" name = "codpostal" placeholder="<?php echo $infCliente['codPostal_cliente']; ?>" require value="<?php echo $infCliente['codPostal_cliente']; ?>"></li>
+                                        <li>Telemóvel: <input type="text" name = "tlm" placeholder="<?php echo $infCliente['telemovel_cliente']; ?>" require value="<?php echo $infCliente['telemovel_cliente']; ?>"></li>
                                         <li>
                                             <button>Guardar</button>
                                         </li>

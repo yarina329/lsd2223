@@ -21,12 +21,26 @@
                         <a href="Index2.php?area=listaprodut">Lista de Produtos <i class="fa-solid fa-chevron-right"></i></a>
                         <a href="Index2.php?area=listacarrinho" class="linklist">Lista de Carrinho <i class="fa-solid fa-chevron-right"></i></a>
                         <a href="Index2.php?area=listacliente">Lista de Clientes <i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=listacomentario">Lista de Comentários <i class="fa-solid fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-9 cx-1">
                     <div class="row">
-                        <div class="col-8">
-                            <div class="cx-2 cx-3">
+                        <div class="col-4">
+                            <div class="cx-2">
+                                <p>Núm de Comentários</p>
+                                <?php
+                                    $query_a_executar = "select count(idComentario) As 'nComentario' from comentarios";
+                                    
+                                    $count = mysqli_query($ligacao,$query_a_executar);
+                            
+                                    $result = mysqli_fetch_assoc($count);
+                                ?>
+                                <p><?php echo $result['nComentario']; ?></p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="cx-2">
                                 <p>Núm de Produtos</p>
                                 <?php
                                     $query_a_executar = "select count(idProduto) As 'nProduto' from produtos";
@@ -66,33 +80,31 @@
                                 <th scope="col">Editar</th>
                                 </tr>
                             </thead>
-                            <tbody>
                             <?php
-                                $query_a_executar = "select produtos.idProduto, carrinhos.*, clientes.email_cliente from produtos 
+                                $query_executar = "select produtos.idProduto, carrinhos.*, clientes.email_cliente from produtos 
                                 inner join carrinhos on idProduto = produtos_idProduto
                                 inner join clientes on idCliente = clientes_idCliente
                                 where carrinhos.ativo = 1";
                         
-                                $result = mysqli_query($ligacao,$query_a_executar);
+                                $resultado = mysqli_query($ligacao,$query_executar);
 
-                                session_start();
-                                while($listacarrinho = mysqli_fetch_assoc($result))
+                                while($listacarrinho = mysqli_fetch_assoc($resultado))
                                 {
-                                $_SESSION['idCarrinho'] = $listacarrinho['idCarrinho'];
-                            
+                                
                             ?>
+                            <tbody>
                                 <tr>
                                 <th scope="row"><?php echo $listacarrinho['idCarrinho']; ?></th>
                                 <td><?php echo $listacarrinho['quantidad_carrinho']; ?></td>
                                 <td><?php echo $listacarrinho['total_carrinho']; ?></td>
                                 <td><?php echo $listacarrinho['email_cliente']; ?></td>
                                 <td><?php echo $listacarrinho['idProduto']; ?></td>
-                                <td><a href="updateC.php"><i class="fa-solid fa-trash-can"></i></a></td>
+                                <td><a href="updateC.php?id=<?php echo $listacarrinho['idCarrinho']; ?>"><i class="fa-solid fa-trash-can"></i></a></td>
                                 </tr>
+                            </tbody>
                             <?php
                             }
                             ?>
-                            </tbody>
                             </table>
 
                         </div>

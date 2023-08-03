@@ -30,12 +30,26 @@
                         <a href="Index2.php?area=listaprodut">Lista de Produtos <i class="fa-solid fa-chevron-right"></i></a>
                         <a href="Index2.php?area=listacarrinho">Lista de Carrinho <i class="fa-solid fa-chevron-right"></i></a>
                         <a href="Index2.php?area=listacliente">Lista de Clientes <i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=listacomentario">Lista de Comentários <i class="fa-solid fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-9 cx-1">
                     <div class="row">
-                        <div class="col-8">
-                            <div class="cx-2 cx-3">
+                    <div class="col-4">
+                            <div class="cx-2">
+                                <p>Núm de Comentários</p>
+                                <?php
+                                    $query_a_executar = "select count(idComentario) As 'nComentario' from comentarios";
+                                    
+                                    $count = mysqli_query($ligacao,$query_a_executar);
+                            
+                                    $result = mysqli_fetch_assoc($count);
+                                ?>
+                                <p><?php echo $result['nComentario']; ?></p>
+                            </div>
+                        </div>  
+                        <div class="col-4">
+                            <div class="cx-2">
                                 <p>Núm de Produtos</p>
                                 <?php
                                     $query_a_executar = "select count(idProduto) As 'nProduto' from produtos";

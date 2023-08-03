@@ -19,9 +19,9 @@
                     </div>
                     <div class="listaGeral">
                         <a href="Index2.php?area=addprod">Geral<i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=gerallistaproduto" class="linklist">Lista de Produtos<i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=gerallistaproduto">Lista de Produtos<i class="fa-solid fa-chevron-right"></i></a>
                         <a href="Index2.php?area=geralcomentario">Comentário<i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=gerallistacomentario">Lista de Comentários<i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=gerallistacomentario" class="linklist">Lista de Comentários<i class="fa-solid fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-9 cx-1">
@@ -60,30 +60,27 @@
                             <thead>
                                 <tr>
                                 <th scope="col">Nº.</th>
-                                <th scope="col">Nome Produto</th>
-                                <th scope="col">Preço</th>
+                                <th scope="col">Foto</th>
+                                <th scope="col">Comentário</th>
                                 <th scope="col">Editar</th>
                                 </tr>
                             </thead>
                             <tbody>
                             <?php
-                                $query_a_executar = "select * from produtos
-                                inner join carrinhos on produtos_idProduto = idProduto
-                                inner join clientes on clientes_idCliente = idCliente
-                                where idCliente = $idCliente";
+                                $query_a_executar = "select * from comentarios
+                                where clientes_idCliente = $idCliente";
                         
                                 $result = mysqli_query($ligacao,$query_a_executar);
 
-                                while($listaprodt = mysqli_fetch_assoc($result))
+                                while($listacomentario = mysqli_fetch_assoc($result))
                                 {
-                                $_SESSION['idProduto'] = $listaprodt['idProduto'];
                             
                             ?>
                                 <tr>
-                                <th scope="row"><?php echo $listaprodt['idProduto']; ?></th>
-                                <td><?php echo $listaprodt['nome_produto']; ?></td>
-                                <td><?php echo $listaprodt['preco_produto']; ?></td>
-                                <td><a href="./Index.php?area=detalhesProduto"><i class="fa-solid fa-eye"></i></a></td>
+                                <th scope="row"><?php echo $listacomentario['idComentario']; ?></th>
+                                <td><img src="imagens/Foto-comentario/<?php echo $listacomentario['foto'];?>" title="<?php echo $listacomentario['foto'];?>"></td>
+                                <td><?php echo $listacomentario['comentario']; ?></td>
+                                <td><a href="delete.php?id=<?php echo $listacomentario['idComentario']; ?>"><i class="fa-solid fa-trash-can"></i></a></td>
                                 </tr>
                             <?php
                             }
@@ -97,7 +94,7 @@
     <?php
         }
         else{
-            header('location:Index2.php?area=geralcliente');
+            header('location:Index2.php?area=listacomentario');
         }
     }
     ?>

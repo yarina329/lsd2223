@@ -26,9 +26,10 @@
                         <p><?php echo $infCliente['email_cliente'];?></p>
                     </div>
                     <div class="listaGeral">
-                    <a href="Index2.php?area=geralcliente" class="linklist">Geral<i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=gerallistaproduto">Lista de Produtos <i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=geralcomentario">Lista de Carrinho <i class="fa-solid fa-chevron-right"></i></a>
+                    <a href="Index2.php?area=geralcliente">Geral<i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=gerallistaproduto">Lista de Produtos<i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=geralcomentario" class="linklist">Comentário<i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=gerallistacomentario">Lista de Comentários<i class="fa-solid fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-9 cx-1">

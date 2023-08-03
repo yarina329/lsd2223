@@ -12,7 +12,7 @@
     $codpostal = $_POST['codpostal'];
     $tlm = $_POST['tlm'];
 
-
+/*
     if($nome != '')
     {
         $query_inserir = "update clientes
@@ -49,13 +49,15 @@
     set telemovel_cliente = '".$tlm."'
     where idCliente = ".$id;
     }
-    
-    $resultaddo = mysqli_query($ligacao, $query_inserir);
- /*
+    */
+ 
     $query_inserir = "update clientes
-    set password_cliente = '".$password."',nome_cliente = '".$nome."'
+    set nome_cliente = '".$nome."',password_cliente = '".$password."', 
+    email_cliente = '".$email."',morada_cliente = '".$morada."',codPostal_cliente = '".$codpostal."',
+    telemovel_cliente = '".$tlm."'
     where idCliente = ".$id;
-*/
+
+    $resultaddo = mysqli_query($ligacao, $query_inserir);
 
     header('location:Index2.php?area=geralcliente'); 
 ?>

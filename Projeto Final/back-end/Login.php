@@ -29,4 +29,13 @@
         </script>
         <?php
     }
+    else if(isset($_GET['login']) && $_GET['login'] == 'desativado')
+    {
+        ?>
+        <script type="text/JavaScript">
+        document.getElementById("erro").innerHTML = 'A sua conta está desativada';
+        
+        </script>
+        <?php
+    }
 ?>

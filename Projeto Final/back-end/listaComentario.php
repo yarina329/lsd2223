@@ -20,8 +20,8 @@
                         <a href="Index2.php?area=addprod">Adicionar Produto <i class="fa-solid fa-chevron-right"></i></a>
                         <a href="Index2.php?area=listaprodut">Lista de Produtos <i class="fa-solid fa-chevron-right"></i></a>
                         <a href="Index2.php?area=listacarrinho">Lista de Carrinho <i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=listacliente" class="linklist">Lista de Clientes <i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=listacomentario">Lista de Comentários <i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=listacliente">Lista de Clientes <i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=listacomentario" class="linklist">Lista de Comentários <i class="fa-solid fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-9 cx-1">
@@ -73,39 +73,40 @@
                             <thead>
                                 <tr>
                                 <th scope="col">Nº.</th>
-                                <th scope="col">Email Cliente</th>
-                                <th scope="col">Ativo</th>
+                                <th scope="col">Foto</th>
+                                <th scope="col">Comentário</th>
                                 <th scope="col">Editar</th>
                                 </tr>
                             </thead>
-                            <tbody>
                             <?php
-                                $query_a_executar = "select * from clientes";
+                                $query_executar = "select * from comentarios";
                         
-                                $result = mysqli_query($ligacao,$query_a_executar);
+                                $resultado = mysqli_query($ligacao,$query_executar);
 
-                                while($listacliente = mysqli_fetch_assoc($result))
+                                while($listacomentario = mysqli_fetch_assoc($resultado))
                                 {
+                                
                             ?>
+                            <tbody>
                                 <tr>
-                                <th scope="row"><?php echo $listacliente['idCliente']; ?></th>
-                                <td><?php echo $listacliente['email_cliente']; ?></td>
-                                <td><?php echo $listacliente['ativo_cliente']; ?></td>
-                                <td><a href="updateClient.php?id=<?php echo $listacliente['idCliente']; ?>"><i class="fa-solid fa-trash-can"></i></a><a href="updateClient2.php?id=<?php echo $listacliente['idCliente']; ?>"><i class="fa-solid fa-eye"></i></a></td>
+                                <th scope="row"><?php echo $listacomentario['idComentario']; ?></th>
+                                <td><img src="imagens/Foto-comentario/<?php echo $listacomentario['foto'];?>" title="<?php echo $listacomentario['foto'];?>"></td>
+                                <td><?php echo $listacomentario['comentario']; ?></td>
+                                <td><a href="delete.php?id=<?php echo $listacomentario['idComentario']; ?>"><i class="fa-solid fa-trash-can"></i></a></td>
                                 </tr>
+                            </tbody>
                             <?php
                             }
                             ?>
-                            </tbody>
                             </table>
 
                         </div>
             </div>
         </div>
     <?php
-        }
-        else{
-            header('location:Index2.php?area=geralcliente');
-        }
+    }
+    else{
+        header('location:Index2.php?area=geralcliente');
+    }
     }
     ?>

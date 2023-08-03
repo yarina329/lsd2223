@@ -42,6 +42,9 @@
                     else if($area_escolhida == 'listacliente'){
                         include('back-end/listaCliente.php');
                     }
+                    else if($area_escolhida == 'listacomentario'){
+                        include('back-end/listaComentario.php');
+                    }
                     else if($area_escolhida == 'geralcliente'){
                         include('back-end/geralCliente.php');
                     }
@@ -50,6 +53,9 @@
                     }
                     else if($area_escolhida == 'geralcomentario'){
                         include('back-end/geralComentario.php');
+                    }
+                    else if($area_escolhida == 'gerallistacomentario'){
+                        include('back-end/geralListaComentario.php');
                     }
                     else{
                         include('./erro.php');

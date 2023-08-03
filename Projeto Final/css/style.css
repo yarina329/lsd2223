@@ -700,6 +700,10 @@ a:hover, a:active {
     margin: 35px 0px;
 }
 
+.table-wrapper-scroll-y table tbody tr td img {
+    width: 10%;
+}
+
 .my-custom-scrollbar table tbody a i{
     color: #024059;
 }

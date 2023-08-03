@@ -3,7 +3,7 @@
     include('config/config.php');
     session_start();
 
-    $id_carrinho = $_SESSION['idCarrinho'];
+    $id_carrinho = $_GET['id'];
 
     $query = "update carrinhos SET ativo = 0
     WHERE idCarrinho = ".$id_carrinho;

@@ -5,17 +5,23 @@
     session_start();
     $idCliente = $_SESSION['id_Cliente'];
 
-    $comentario = $_POST['produto'];
+    $comentario = $_POST['comentario'];
+
+    $foto = $_FILES['foto'];
+
+    print_r($foto);
+    $origem = $foto['tmp_name'];
 
     $nome_do_ficheiro = uniqid().".jpg";
-    $destino = "../imagens/Produtos".$nome_do_ficheiro;
+    $destino = "imagens/Foto-comentario/".$nome_do_ficheiro;
 
     move_uploaded_file($origem, $destino);
 
     $query_inserir = "insert into comentarios
-    (nome_produto, clientes_idCliente) values
-    ('".$comentario."',
-     ".$nomeSerie."
+    (foto, comentario, clientes_idCliente) values
+    ('".$nome_do_ficheiro."',
+    '".$comentario."',
+     ".$idCliente."
      )";
 
     

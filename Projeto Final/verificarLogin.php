@@ -15,11 +15,12 @@
 
     
     $registo = mysqli_fetch_assoc($resultado);
-    //$idTipoCliente = $TipoCliente['fk_idTipo'];
 
     $numero_de_users_encontrados = $resultado->num_rows;
+    echo ($numero_de_users_encontrados);
+    $ativo = $registo['ativo_cliente'];
 
-    if($numero_de_users_encontrados == 1 && $registo['tipoclientes_idTipoCliente'] == 1)
+    if($numero_de_users_encontrados == 1 && $registo['tipoclientes_idTipoCliente'] == 1 && $ativo == 1)
     {
         session_start();
         
@@ -33,7 +34,7 @@
 
         header('location:Index2.php?area=addprod');
     }
-    else if($numero_de_users_encontrados == 1 && $registo['tipoclientes_idTipoCliente'] == 2)
+    else if($numero_de_users_encontrados == 1 && $registo['tipoclientes_idTipoCliente'] == 2 && $ativo == 1)
     {
         session_start();
         
@@ -46,6 +47,10 @@
         $_SESSION['tipoclientes_idTipoCliente'] = $tipo;
 
         header('location:Index2.php?area=geralcliente');
+    }
+    else if($numero_de_users_encontrados == 1 && $ativo == 0)
+    {
+        header('location:Index2.php?login=desativado');
     }
     else if($numero_de_users_encontrados != 1)
     {
