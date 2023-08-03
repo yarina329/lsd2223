@@ -65,14 +65,10 @@
                             <div class="formulaAdd">
                                 <div id="mensagem">
                                 </div>
-                                <form method="post" action="atualizacaoCliente.php" enctype="multipart/form-data">
+                                <form method="post" action="inserirComentario.php" enctype="multipart/form-data">
                                     <ul>
-                                        <li>Nome: <input type="text" name = "nomeC" placeholder="<?php echo $infCliente['nome_cliente']; ?>"></li>
-                                        <li>Email: <input type="text" name = "email" placeholder="<?php echo $infCliente['email_cliente']; ?>"></li>
-                                        <li>Password: <input type="text" name = "password" placeholder="<?php echo $infCliente['password_cliente']; ?>"></li>
-                                        <li>Morada: <input type="text" name = "morada" placeholder="<?php echo $infCliente['morada_cliente']; ?>"></li>
-                                        <li>Codigo Postal: <input type="text" name = "codpostal" placeholder="<?php echo $infCliente['codPostal_cliente']; ?>"></li>
-                                        <li>Telemóvel: <input type="text" name = "tlm" placeholder="<?php echo $infCliente['telemovel_cliente']; ?>"></li>
+                                        <li>Foto: <input type="file" name = "foto"></li>
+                                        <li>Comentário: <textarea type="text" name = "comentario"></textarea></li>
                                         <li>
                                             <button>Guardar</button>
                                         </li>
@@ -80,6 +76,17 @@
                                 </form>
                             </div>
                         </div>
+                        <?php
+                            if(isset($_GET['status']) && $_GET['status'] == 'ok')
+                            {
+                                ?>
+                                <script type="text/JavaScript">
+                                document.getElementById("mensagem").innerHTML = 'Comentário inserido com sucesso!!!';
+                                
+                                </script>
+                                <?php
+                            }
+                        ?>
                         </div>
                     </div>
                 </div>

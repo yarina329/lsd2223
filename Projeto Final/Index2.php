@@ -48,6 +48,9 @@
                     else if($area_escolhida == 'gerallistaproduto'){
                         include('back-end/geralListaProduto.php');
                     }
+                    else if($area_escolhida == 'geralcomentario'){
+                        include('back-end/geralComentario.php');
+                    }
                     else{
                         include('./erro.php');
                     }

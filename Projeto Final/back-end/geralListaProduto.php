@@ -20,8 +20,7 @@
                     <div class="listaGeral">
                         <a href="Index2.php?area=addprod">Geral<i class="fa-solid fa-chevron-right"></i></a>
                         <a href="Index2.php?area=gerallistaproduto" class="linklist">Lista de Produtos <i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=listacarrinho">Lista de Carrinho <i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=listacliente">Lista de Clientes <i class="fa-solid fa-chevron-right"></i></a>
+                        <a href="Index2.php?area=geralcomentario">Lista de Carrinho <i class="fa-solid fa-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-9 cx-1">
