@@ -8,9 +8,9 @@
                 <h2>Mais Informações</h2>
                 <a href="#" title="Página de Contacto">Contacto</a>
             </div>
-            <div class="col-4 efeito-cx2">
-                <h2>Ajuda</h2>
-                <a href="#" title="Página de Perguntas Frequentes">Perguntas Frequentes</a>
+            <div class="col-4">
+                <h2>Comentários</h2>
+                <a href="#" title="Comentários">Comentários</a>
             </div>
             <div class="col-4 cx-mg">
                 <p><i class="fa-solid fa-phone"></i>+351 934 470 154</p>

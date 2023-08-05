@@ -1,8 +1,14 @@
+<style>
+    .imgPrincipal{
+        display: none;
+    }
+</style>
+
 <div class="conteudo">
             <?php
                 $query_executar = "select DISTINCT * from categorias
-                inner join produtos on fk_idCategoria = idCategoria
-                inner join series on fk_idSerie = idSerie
+                inner join produtos on categorias_idCategoria = idCategoria
+                inner join series on series_idSerie = idSerie
                 where ativo_desconto = 0 and ativo_produto = 1 and idCategoria = 5";
                 $resultado = mysqli_query($ligacao,$query_executar);
             ?>

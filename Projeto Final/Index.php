@@ -12,6 +12,7 @@
     <title>DYAnim</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:500px)">
     <link rel="stylesheet" href="font-awesome/css/all.css">
@@ -60,6 +61,21 @@
                     else if($area_escolhida == 'mensagem'){
                         include('front-end/paginas/mensagem.php');
                     }
+                    else if($area_escolhida == 'listacm'){
+                        include('front-end/paginas/ListaCM.php');
+                    }
+                    else if($area_escolhida == 'listads'){
+                        include('front-end/paginas/ListaDS.php');
+                    }
+                    else if($area_escolhida == 'listasxf'){
+                        include('front-end/paginas/ListaSXF.php');
+                    }
+                    else if($area_escolhida == 'listan'){
+                        include('front-end/paginas/ListaN.php');
+                    }
+                    else if($area_escolhida == 'teste'){
+                        include('teste.php');
+                    }
                     else{
                         include('erro.php');
                     }
@@ -75,6 +91,10 @@
         </div>
 </body>
 
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+<!-- JavaScript-->
+<script src="js/script.js"></script> 
 <script src="js/jquery-3.6.4.min.js"></script>
 <script src="js/javascript.js"></script>
 <script src="js/bootstrap/bootstrap.bundle.min.js"></script>

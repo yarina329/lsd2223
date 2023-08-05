@@ -1,8 +1,14 @@
+<style>
+    .imgPrincipal{
+        display: none;
+    }
+</style>
+
 <div class="conteudo">
             <?php
                 $query_executar = "select DISTINCT * from categorias
-                inner join produtos on fk_idCategoria = idCategoria
-                inner join series on fk_idSerie = idSerie
+                inner join produtos on categorias_idCategoria = idCategoria
+                inner join series on series_idSerie = idSerie
                 where ativo_desconto = 0 and ativo_produto = 1 and idCategoria = 2";
                 $resultado = mysqli_query($ligacao,$query_executar);
             ?>
@@ -11,9 +17,9 @@
                 <?php
                     while($linha_produtos = mysqli_fetch_assoc($resultado))
                     {
-                        $idProduto = $linha_produtos['idProduto'];
+                        $_SESSION['id_Produto']= $linha_produtos['idProduto'];
                 ?>
-                <a href="DetalhesProduto.php?id=<?php echo $idProduto; ?>">
+                <a href="Index.php?area=detalhesProduto">
                 <div class="conteudo_detalhes">
                     <div class="col-1">
                         <div class="produtos">
