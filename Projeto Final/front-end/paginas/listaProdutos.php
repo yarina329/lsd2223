@@ -1,16 +1,7 @@
 <div class="conteudo">
                 <h2>DESCONTOS</h2>
                 <div class="desc-produto">
-                    <div class="imageProduto">
-                        <img src="imagens/Produtos/<?php echo $linha['foto_produto'];?>" title="Produto em desconto">
-                    </div>
-                    <div class="detalheProduto">
-                        <h5><!--?php echo $linha_produtos['desconto_produto'];?></h5><h5>€ /--></h5>
-                        <br>
-                        <h4>32.50</h4>€
-                        <p class="titlProduto">Figura Naruto</p>
-                        <p class="SubtitlProduto">Mandara Uchiba</p>
-                    </div>
+                    <?php include('carosel.php'); ?>
                 </div>
             </div>
             <div class="barra-principal">
@@ -22,26 +13,22 @@
                 </div>
             </div>
 
-            <div class="barra-pesquisa">
-                <input type="text" placeholder="Pesquisa...">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+            <?php include('front-end/paginas/barrapesquisa.php'); ?>
 
             <div class="conteudo">
                 <h2>TOP 15</h2>
                         <?php
-                            $query_a_executar = "select * from produtos 
+                            $query_a_executar = "select DISTINCT * from produtos 
                             inner join series on series_idSerie = idSerie
                             where ativo_desconto = 0 and ativo_produto=1";
                             $result = mysqli_query($ligacao,$query_a_executar);
 
-                            session_start();
                             while($linha_produtos = mysqli_fetch_assoc($result))
                             {
                                
-                                $_SESSION['id_Produto']= $linha_produtos['idProduto'];
-                        ?>
-                        <a href="Index.php?area=detalhesProduto">
+                                $idProduto= $linha_produtos['idProduto'];
+                ?>
+                <a href="Index.php?area=detalhesProduto&id_Produto=<?php echo $idProduto;?>">
                             <div class="conteudo_detalhes">
                                 <div class="col-1">
                                     <div class="produtos">

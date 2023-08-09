@@ -22,6 +22,10 @@
         display: none;
     }
 
+    .logo-principal img {
+        display: none;
+    }
+
     /*         HEADER         */
     header{
         height: 40px;
@@ -52,10 +56,11 @@
     }
 
     #item-mobile{
-        width: 50%;
+        width: 95%;
         background-color:#037F8C;
         border-radius: 20px;
         position: absolute;
+        left: 5%;
     }
 
     .menu-mobile ul{
@@ -64,9 +69,11 @@
     }
 
     .menu-mobile ul li{
-        width: 30%;
+        width: 94%;
         background-color: #fff;
-        padding: 5px;
+        padding: 10px 0px;
+        margin: 12px;
+        display: grid;
         border-radius: 5%;
     }
     .menu-mobile ul li a{
@@ -75,7 +82,109 @@
         text-align: left;
     }
 /*                                       */
-/*               Footer                  */
+
+/*               CAROSEL                    */
+
+.cx-login{
+    width: 100%;
+}
+
+.menuLogin img{
+    width: 60%;
+}
+
+.cx-regist{
+    width: 100%;
+}
+
+.menu-backend{
+    display: none;
+}
+
+/*                                          */
+/*               CAROSEL                    */
+
+.visualizarcarosel{
+    position: inherit;
+}
+
+.visualizarcarosel .carosel {
+    grid-auto-columns: calc((80% / 2) - -30px);
+    margin: 0px -45px;
+    gap: 5px;
+}
+
+.visualizarcarosel .carosel a{
+    width: 85%;
+}
+
+.carosel .listacarosel{
+    width: 87%;
+    padding-bottom: 0px;
+}
+
+.visualizarcarosel i{
+    display: none;
+}
+
+.visualizarcarosel .carosel .listacarosel .imagem{
+    margin: 5px;
+}
+
+.visualizarcarosel .carosel .listacarosel .detalheProduto{
+    text-align: center;
+    margin: 10px 0px;
+}
+    
+/*                                       */
+/*           LISTA PRODUTOS              */
+
+.conteudo .conteudo_detalhes{
+    margin: 0px 15px;
+}
+
+.conteudo .col-1{
+    width: calc(33.33% - -30px) !important;
+    margin: 40px 10px !important;
+}
+
+.conteudo .col-1 .imageProduto img{
+    height: 130px;
+}
+/*                                       */
+/*            DETALHES PRODUTO                 */
+
+.visualizarProduto{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+}
+
+.visualizarProduto .imagem{
+    width: initial;
+}
+
+.visualizarProduto .detalhes{
+    display: inherit;
+}
+
+/*                                       */
+/*               PESQUISA                    */
+
+.barra-pesquisa{
+    padding: 20px;
+}
+
+.barra-pesquisa input[type=text]{
+    width: 80%;
+}
+
+.barra-pesquisa i{
+    padding: 5px;
+}
+/*                                       */
+/*               CATEGORIAS               */
 
     .marg-categ{
         flex-direction: column;
@@ -84,3 +193,36 @@
     .categ-1{
         margin: 10px 0px;
     }
+/*                                       */
+/*                 FOOTER                */
+
+footer{
+    height: 700px;
+    padding: 50px 25px;
+}
+
+.footer-conteudo{
+    grid-template-columns: repeat(1, 1fr) !important;
+}
+
+footer img{
+    width: 80%;
+}
+
+footer .footer-lista{
+    text-align: left;
+    margin-top: 25px;
+}
+
+footer .footer-info{
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+    
+/*                                       */
+/*                FAVORITOS                */
+
+.table-wrapper-scroll-y {
+    margin: 35px 15px !important;
+}

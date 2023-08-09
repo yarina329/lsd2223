@@ -46,7 +46,7 @@
         $_SESSION['emailCliente'] = $email;
         $_SESSION['tipoclientes_idTipoCliente'] = $tipo;
 
-        header('location:Index2.php?area=geralcliente');
+        header('location:Index.php');
     }
     else if($numero_de_users_encontrados == 1 && $ativo == 0)
     {

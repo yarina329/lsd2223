@@ -6,7 +6,7 @@
     $id_carrinho = $_GET['id'];
 
     $query = "update carrinhos SET ativo = 0
-    WHERE idCarrinho = ".$id_carrinho;
+    WHERE idCarrinho = $id_carrinho";
 
     mysqli_query($ligacao,$query);
 

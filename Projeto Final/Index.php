@@ -12,10 +12,11 @@
     <title>DYAnim</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> 
     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:500px)">
     <link rel="stylesheet" href="font-awesome/css/all.css">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <script src="js/script.js" defer></script>
 
 </head>
 <body>
@@ -30,7 +31,6 @@
             <div>
             <?php 
 
-                //verificar a variavel de GET com o nome AREA existe
                 if(isset($_GET['area'])){
                     $area_escolhida = $_GET['area'];
 
@@ -73,8 +73,11 @@
                     else if($area_escolhida == 'listan'){
                         include('front-end/paginas/ListaN.php');
                     }
-                    else if($area_escolhida == 'teste'){
-                        include('teste.php');
+                    else if($area_escolhida == 'favorito'){
+                        include('front-end/paginas/Favorito.php');
+                    }
+                    else if($area_escolhida == 'resultpesquisa'){
+                        include('front-end/paginas/resultpesquisa.php');
                     }
                     else{
                         include('erro.php');
@@ -91,10 +94,6 @@
         </div>
 </body>
 
-<!-- Swiper JS -->
-<script src="js/swiper-bundle.min.js"></script>
-<!-- JavaScript-->
-<script src="js/script.js"></script> 
 <script src="js/jquery-3.6.4.min.js"></script>
 <script src="js/javascript.js"></script>
 <script src="js/bootstrap/bootstrap.bundle.min.js"></script>

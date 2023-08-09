@@ -17,9 +17,9 @@
         
         while($linha_produtos = mysqli_fetch_assoc($result))
         {
-            $_SESSION['id_Produto']= $linha_produtos['idProduto'];
-        ?>
-            <a href="Index.php?area=detalhesProduto">
+            $idProduto= $linha_produtos['idProduto'];
+                ?>
+                <a href="Index.php?area=detalhesProduto&id_Produto=<?php echo $idProduto;?>">
                 <div class="conteudo_detalhes">
                     <div class="col-1">
                         <div class="produtos">

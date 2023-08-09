@@ -76,14 +76,14 @@
 
                                 while($listaprodt = mysqli_fetch_assoc($result))
                                 {
-                                $_SESSION['idProduto'] = $listaprodt['idProduto'];
-                            
+                                    $idProduto= $linha_produtos['idProduto'];
+                                    
                             ?>
                                 <tr>
                                 <th scope="row"><?php echo $listaprodt['idProduto']; ?></th>
                                 <td><?php echo $listaprodt['nome_produto']; ?></td>
                                 <td><?php echo $listaprodt['preco_produto']; ?></td>
-                                <td><a href="./Index.php?area=detalhesProduto"><i class="fa-solid fa-eye"></i></a></td>
+                                <td><a href="./Index.php?area=detalhesProduto&id_Produto=<?php echo $idProduto;?>"><i class="fa-solid fa-eye"></i></a></td>
                                 </tr>
                             <?php
                             }

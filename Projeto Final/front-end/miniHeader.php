@@ -1,6 +1,6 @@
 <header>
     <div class="icons">
-        <div class="heart"><i class="fa-solid fa-heart"></i></div>
+        <div class="heart"><a href="Index.php?area=favorito"><i class="fa-solid fa-heart"></i></a></div>
         <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
         <?php
             if(isset($_SESSION['id_Cliente']))
