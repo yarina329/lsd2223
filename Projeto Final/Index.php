@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:500px)">
     <link rel="stylesheet" href="font-awesome/css/all.css">
     <link rel="stylesheet" href="font-awesome/css/all.min.css">
-    <script src="js/script.js" defer></script>
 
 </head>
 <body>
@@ -84,6 +83,9 @@
                     }
                     else if($area_escolhida == 'comentario'){
                         include('front-end/paginas/comentario.php');
+                    }
+                    else if($area_escolhida == 'contato'){
+                        include('front-end/paginas/contato.php');
                     }
                     else{
                         include('erro.php');

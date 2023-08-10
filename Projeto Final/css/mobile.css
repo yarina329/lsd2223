@@ -266,5 +266,5 @@ footer .footer-info{
 /*                                  */
 /*               COMENTARIO            */
 .visualizarcomentario .carousel{
-    grid-auto-columns: calc((100% / 1) - 10%);;
+    grid-auto-columns: calc((100% / 1) - 10%);
 }

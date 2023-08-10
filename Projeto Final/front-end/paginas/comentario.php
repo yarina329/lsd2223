@@ -1,9 +1,13 @@
-
+<style>
+    .imgPrincipal{
+        display: none;
+    }
+</style>
 <div class="visualizarcomentario">
   <i id="esquerda" class="fa-solid fa-chevron-left"></i>
     <ul class="carousel">
       <?php
-        $query = "select DISTINCT * from comentarios";
+        $query = "select distinct * from comentarios";
         $result = mysqli_query($ligacao,$query);
 
         while($comentario = mysqli_fetch_assoc($result))

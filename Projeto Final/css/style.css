@@ -1016,3 +1016,63 @@ a:hover, a:active {
   height: 140px;
   object-fit: cover;
 }
+
+/*                                      */
+/*               ERRO             */
+
+.pag-erro{
+    width: 100%;
+    height: 500px;
+}
+
+.pag-erro .img{
+    background-image: url("../imagens/Registo.png");
+    background-size: cover;
+    width: 100%;
+    min-height: 530px;
+    position: relative;
+}
+
+.pag-erro .img h1{
+    color: #fff;
+    text-align: center;
+    left: 20%;
+    right: 20%;
+    padding: 150px 0px;
+}
+
+/*                                      */
+/*               CONTATO             */
+.contato .formulario form{
+    overflow: hidden;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contato .formulario form ul li {
+    color: #000;
+    margin-top: 20px;
+    display: flex;
+}
+
+.contato .formulario form ul li button{
+    border-radius: 5%;
+    padding: 5px 20px;
+    background-color: #D94E4E;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.contato .formulario form ul li input{
+    margin-left: 20px;
+}
+.contato .formulario form ul li input, textarea{
+    width: 90%;
+    color: #000 ;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}

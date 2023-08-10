@@ -8,7 +8,7 @@
                 <h2>Mais Informações</h2>
             </li>
             <li class="text-1">
-                <a href="#" title="Página de Contacto">Contacto</a>
+                <a href="Index.php?area=contato" title="Página de Contacto">Contacto</a>
             </li>
         </ul>
         <ul class="footer-lista">

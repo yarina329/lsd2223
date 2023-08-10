@@ -101,13 +101,24 @@
                             $preco_produto = mysqli_fetch_assoc($resultado);
 
                             $produto = $preco_produto['preco_produto'];
+                            $desconto_produto = $preco_produto['desconto_produto'];
+                            $ativoD = $preco_produto['ativo_desconto'];
+                            if($ativoD == 1){
+                                $quantidade = 1;
+                                $preco_total = $desconto_produto * $quantidade;
 
-                            $quantidade = 1;
-                            $preco_total = $produto * $quantidade;
-
-                            $total += $preco_total; 
-                            
-                            $_SESSION['total'] = $total;
+                                $total += $preco_total; 
+                                
+                                $_SESSION['total'] = $total;
+                            }
+                            else{
+                                $quantidade = 1;
+                                $preco_total = $produto * $quantidade;
+    
+                                $total += $preco_total; 
+                                
+                                $_SESSION['total'] = $total;
+                            }
 
                         }
 
