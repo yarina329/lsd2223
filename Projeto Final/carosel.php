@@ -33,4 +33,3 @@
     </ul>
   <i id="direita" class="fa-solid fa-chevron-right"></i>
 </div>
-    

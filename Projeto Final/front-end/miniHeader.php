@@ -1,7 +1,7 @@
 <header>
     <div class="icons">
         <div class="heart"><a href="Index.php?area=favorito"><i class="fa-solid fa-heart"></i></a></div>
-        <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="cart"><a href="Index.php?area=carrinho"><i class="fa-solid fa-cart-shopping"></i></a></div>
         <?php
             if(isset($_SESSION['id_Cliente']))
                 {

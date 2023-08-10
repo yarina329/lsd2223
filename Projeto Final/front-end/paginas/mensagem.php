@@ -1,3 +1,7 @@
+<head>
+<meta http-equiv="refresh" content="5;url=Index.php">
+</head>
+
 <style>
     .imgPrincipal{
         display: none;

@@ -32,7 +32,7 @@
         $_SESSION['emailCliente'] = $email;
         $_SESSION['tipoclientes_idTipoCliente'] = $tipo;
 
-        header('location:Index2.php?area=addprod');
+        header('location:Index.php?');
     }
     else if($numero_de_users_encontrados == 1 && $registo['tipoclientes_idTipoCliente'] == 2 && $ativo == 1)
     {

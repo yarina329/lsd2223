@@ -76,7 +76,7 @@
 
                                 while($listaprodt = mysqli_fetch_assoc($result))
                                 {
-                                    $idProduto= $linha_produtos['idProduto'];
+                                    $idProduto= $listaprodt['idProduto'];
                                     
                             ?>
                                 <tr>

@@ -16,7 +16,7 @@
                 <h2>Comentários</h2>
             </li>
             <li class="text-2">
-                <a href="#" title="Comentários">Comentários</a>
+                <a href="Index.php?area=comentario" title="Comentários">Comentários</a>
             </li>
         </ul>
         <div class="footer-info">

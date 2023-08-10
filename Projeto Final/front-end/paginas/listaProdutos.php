@@ -16,7 +16,7 @@
             <?php include('front-end/paginas/barrapesquisa.php'); ?>
 
             <div class="conteudo">
-                <h2>TOP 15</h2>
+                <h2>O Melhor do Anime</h2>
                         <?php
                             $query_a_executar = "select DISTINCT * from produtos 
                             inner join series on series_idSerie = idSerie
@@ -28,7 +28,7 @@
                                
                                 $idProduto= $linha_produtos['idProduto'];
                 ?>
-                <a href="Index.php?area=detalhesProduto&id_Produto=<?php echo $idProduto;?>">
+                        <a href="Index.php?area=detalhesProduto&id_Produto=<?php echo $idProduto;?>">
                             <div class="conteudo_detalhes">
                                 <div class="col-1">
                                     <div class="produtos">

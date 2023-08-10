@@ -79,6 +79,12 @@
                     else if($area_escolhida == 'resultpesquisa'){
                         include('front-end/paginas/resultpesquisa.php');
                     }
+                    else if($area_escolhida == 'mensagem'){
+                        include('front-end/paginas/mensagem.php');
+                    }
+                    else if($area_escolhida == 'comentario'){
+                        include('front-end/paginas/comentario.php');
+                    }
                     else{
                         include('erro.php');
                     }

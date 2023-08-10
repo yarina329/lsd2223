@@ -1,4 +1,4 @@
-function CaroselPrincipal(){
+
 const carosel = document.querySelector(".carosel");
 const arrowBtns = document.querySelectorAll(".visualizarcarosel i");
 const firstCardWidth = carosel.querySelector(".listacarosel").offsetWidth;
@@ -42,4 +42,3 @@ const dragStop = () => {
 carosel.addEventListener("mousedown", dragStart);
 carosel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
-}

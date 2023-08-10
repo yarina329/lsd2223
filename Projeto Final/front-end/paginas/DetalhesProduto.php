@@ -22,6 +22,7 @@
             ?>
 
             <form action="inserirCarrinho.php">
+                <!---->
             <div class="DtlProduto">
                 <div class="visualizarProduto">
                     <div class="imagem">
@@ -31,13 +32,13 @@
                     <div>
                         <?php
                         $valor = 0.00;
-                        if($desconto == $valor || $ativo_descont == 0)
+                        if($desconto == $valor && $ativo_descont == 0)
                         { 
                         ?>
                             <h5> </h5>
                         <?php
                         }
-                        else if($desconto != $valor || $ativo_descont == 1)
+                        else if($desconto != $valor && $ativo_descont == 1)
                         {
                         ?>
                             <h5><?php echo $detalhes_produtos['desconto_produto'];?>€</h5>

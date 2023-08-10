@@ -2,16 +2,23 @@
     include('config/config.php');
 
     session_start();
-    $idProduto = $_SESSION['id_Produto'];
-    $idCliente = $_SESSION['id_Cliente'];
-    
-    $queryinserir = "insert into carrinhos
-    (fk_idProduto, fk_idCliente)
-    values
-    (".$idProduto.",".$idCliente.")";
 
-    echo ($queryinserir);
-    die();
-    mysqli_query($ligacao,$queryinserir);
-    //header('location:Index.php?area=carrinho&status=ok');
-?>
+    if(!isset($_SESSION['id_Cliente']))
+    {
+        header('location:Index2.php');
+    }
+    else{
+        if(!isset($_SESSION['carrinho']))
+        {
+            $_SESSION['carrinho'] = []; 
+        }
+
+        if(isset($_SESSION['idproduto']))
+        {
+            $id_produto = $_SESSION['idproduto'];
+            $_SESSION['carrinho'] [] = $id_produto;
+
+            header('location:Index.php?area=carrinho');
+        }
+    }
+ ?>

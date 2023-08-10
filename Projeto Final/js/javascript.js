@@ -98,27 +98,3 @@ function validaMelhor(){
 
 }
 
-function mostraMenuBackEnd()
-{
-    if (document.getElementById('item-mobile-backend').style.display == 'none')
-    {
-        document.getElementById('icon-menu').innerHTML = '<i class="fa-solid fa-x fa-3x"></i>';
-        document.getElementById('item-mobile-backend').style.display = 'block';
-    }
-    else
-    {
-        document.getElementById('icon-menu').innerHTML = '<i class="fa-solid fa-bars fa-3x"></i>';
-        document.getElementById('item-mobile-backend').style.display = 'none';
-    }
-}
-
-function menuPrincipalBackEnd()
-{
-    largura = window.innerWidth;
-
-    if( largura > 850)
-    {
-        document.getElementById('icon-menu').innerHTML = '<i class="fa-solid fa-bars fa-3x"></i>';
-        document.getElementById('item-mobile-backend').style.display = 'none';
-    }
-}

@@ -1,4 +1,4 @@
-<div class="col-4">
+<div class="col-4 cx-mobile">
                             <div class="cx-2">
                                 <p>Núm de Comentários</p>
                                 <?php
@@ -11,7 +11,7 @@
                                 <p><?php echo $result['nComentario']; ?></p>
                             </div>
                         </div>  
-                        <div class="col-4">
+                        <div class="col-4 cx-mobile">
                             <div class="cx-2">
                                 <p>Núm de Produtos</p>
                                 <?php
@@ -24,7 +24,7 @@
                                 <p><?php echo $result['nProduto']; ?></p>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 cx-mobile">
                             <div class="cx-2 cx-4">
                                 <p>Núm de Clientes</p>
                                 <?php

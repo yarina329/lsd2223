@@ -19,7 +19,7 @@
         $_SESSION['email'] = $infCliente['email_cliente'];
         ?>
         <div class="addProd">
-            <div class="row menu-backend" onresize="menuPrincipalBackEnd()">
+            <div class="row">
                 <div class="col-3 perfil">
                     <div>
                         <img src="imagens/perfil/perfil.png" title="Imagem de perfil">
@@ -32,18 +32,6 @@
                         <a href="Index2.php?area=listacliente">Lista de Clientes <i class="fa-solid fa-chevron-right"></i></a>
                         <a href="Index2.php?area=listacomentario">Lista de Comentários <i class="fa-solid fa-chevron-right"></i></a>
                     </div>
-                <div class="menu-mobile-backend">
-                    <span id="icon-menu" onclick="mostraMenuBackEnd()">
-                        <i class="fa-solid fa-bars fa-3x"></i>
-                    </span>
-                    <div id="item-mobile-backend" class="listaGeral">
-                        <a href="Index2.php?area=addprod" class="linklist">Adicionar Produto <i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=listaprodut">Lista de Produtos <i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=listacarrinho">Lista de Carrinho <i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=listacliente">Lista de Clientes <i class="fa-solid fa-chevron-right"></i></a>
-                        <a href="Index2.php?area=listacomentario">Lista de Comentários <i class="fa-solid fa-chevron-right"></i></a>
-                    </div>
-                </div>
                 </div>
                 <div class="col-9 cx-1">
                     <div class="row">

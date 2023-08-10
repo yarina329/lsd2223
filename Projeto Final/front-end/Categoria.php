@@ -10,7 +10,7 @@
         <div class="categ-1">
             <center>
                 <a href="Index.php?area=listads" title="Página de Demon Slayer">
-                    <img src="./imagens/icons-categoria/spyXFamily.png">
+                    <img src="./imagens/icons-categoria/demonSlayer.jpeg">
                 </a>
             </center>
         </div>

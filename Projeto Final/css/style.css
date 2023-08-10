@@ -41,11 +41,7 @@ h4, .titlProduto, .SubtitlProduto{
 /*                                  */
 
 /**********************************/
-.wrapper{
-    width: calc(100% - 20px);
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .imgPrincipal video{
     width: 100%;
@@ -234,12 +230,12 @@ header #text-email, .heart, .login, .cart, .logout{
     margin-left: 50px;
     margin-bottom: 20px;*/
 }
-
+/*
 .col-1:hover {
     border: 3px solid #000;
     transform: scale(1.1);
     margin-bottom: 35px;
-}
+}*/
 /*                              */
 
 
@@ -257,6 +253,10 @@ header #text-email, .heart, .login, .cart, .logout{
 
 .visualizarProduto h4{
     display: inline;
+}
+
+.visualizarProduto h5{
+    color: #D94E4E;
 }
 
 .visualizarProduto{
@@ -564,6 +564,10 @@ a:hover, a:active {
     border-radius: 5px;
 }
 
+.total h4{
+    margin-left: 20px;
+}
+
 /*                                    */
 /*              MENSAGEM               */
 
@@ -830,7 +834,7 @@ a:hover, a:active {
 }
 
 /*                                     */
-/*              FAVORITOS             */
+/*              DESCONTOS             */
 
 .desc-produto{
     display: flex;
@@ -905,9 +909,110 @@ a:hover, a:active {
   justify-content: center;
   flex-direction: column;
   border: 3px solid #000;
+  text-align: center;
 }
 
 .listacarosel .imagem img {
+  height: 140px;
+  object-fit: cover;
+}
+
+/*                                  */
+/*               CARRINHO            */
+
+.buttonCarrinho{
+    display: grid;
+    width: 50%;
+    margin-left: 30px;
+}
+
+.buttonCarrinho button{
+    border-radius: 5%;
+    padding: 5px 20px;
+    background-color: #D94E4E;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/*                                      */
+/*               COMENTARIO             */
+.visualizarcomentario {
+    width: 60%;
+    position: relative;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.visualizarcomentario i {
+    height: 50px;
+    /*width: 45px;
+    text-align: center;*/
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 4.25rem;
+    position: absolute;
+    color: #000;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.visualizarcomentario i:first-child{
+  left: -30px;
+}
+.visualizarcomentario i:last-child{
+  right: -30px;
+}
+
+.visualizarcomentario .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((80% / 2) - -35px);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: auto;
+  margin: 0px 20px;
+}
+
+.visualizarcomentario .carousel li{
+    text-align: center;
+  }
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .listacomentario {
+  cursor: grab;
+  user-select: none;
+}
+
+.carosel .listacomentario {
+  scroll-snap-align: start;
+  width: 80%;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  display: flex;
+  cursor: pointer;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid #000;
+  text-align: center;
+}
+
+.listacomentario .imagem img {
   height: 140px;
   object-fit: cover;
 }

@@ -8,7 +8,7 @@
         $query_a_executar = "select * from produtos 
         inner join series on series_idSerie = idSerie
         inner join categorias on categorias_idCategoria = idCategoria
-        where ativo_desconto = 0 and ativo_produto=1  and series_idSerie = 2";
+        where ativo_produto=1  and series_idSerie = 2";
         $result = mysqli_query($ligacao,$query_a_executar);
 
     ?>
@@ -17,6 +17,8 @@
         
         while($linha_produtos = mysqli_fetch_assoc($result))
         {
+            $desconto = $linha_produtos['desconto_produto'];
+                $ativo_descont = $linha_produtos['ativo_desconto'];
             $idProduto= $linha_produtos['idProduto'];
                 ?>
                 <a href="Index.php?area=detalhesProduto&id_Produto=<?php echo $idProduto;?>">
@@ -27,6 +29,23 @@
                             <img src="imagens/Produtos/<?php echo $linha_produtos['foto_produto'];?>" title="<?php echo $linha_produtos['nome_produto'];?>">
                         </div>
                         <div class="detalheProduto">
+                        <div>
+                        <?php
+                        $valor = 0.00;
+                        if($desconto == $valor || $ativo_descont == 0)
+                        { 
+                        ?>
+                            <h5> </h5>
+                        <?php
+                        }
+                        else if($desconto != $valor || $ativo_descont == 1)
+                        {
+                        ?>
+                            <h5><?php echo $linha_produtos['desconto_produto'];?>€</h5>
+                        <?php
+                        }
+                        ?>
+                    </div>
                             <h4><?php echo $linha_produtos['preco_produto'];?></h4><h4>€</h4>
                             <p class="titlProduto"><?php echo $linha_produtos['nome_serie'];?></p>
                             <p class="SubtitlProduto"><?php echo $linha_produtos['nome_produto'];?></p>
